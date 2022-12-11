@@ -1,0 +1,33 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import TopAnnouncement from "../components/TopAnnouncement.astro";
+const { frontmatter, title } = Astro.props
+let pagetitle = title ? title : frontmatter.title
+let pageNav = await Astro.glob('../pages/*.astro');
+
+---
+<html lang="en">
+    <Header title={ pagetitle }></Header>
+    <body class="container mx-auto">
+        <TopAnnouncement></TopAnnouncement>
+        <nav class="flex justify-between">
+            <div class="w-56 my-auto">
+               <a href="/"> <h1 class="border-2 border-yellow-600 text-xl p-2 text-center font-bold tracking-tight leading-tight">thehigglers company</h1></a>
+            </div>
+            <ul class="flex my-auto">
+                <a href="/"><li class="border-2 border-yellow-600 p-2 ml-2">Home</li></a>
+                <a href={pageNav[0].url}> <li class="border-2 border-yellow-600 p-2 ml-2"> About us </li></a>
+                <a href={pageNav[4].url}> <li class="border-2 border-yellow-600 p-2 ml-2"> Services </li></a>
+                <a href={pageNav[1].url}> <li class="border-2 border-yellow-600 p-2 ml-2"> Blog </li></a>
+                <a href={pageNav[2].url}> <li class="border-2 border-yellow-600 p-2 ml-2"> Contact Us </li></a>
+            </ul>
+        </nav>
+        <div class="my-5">
+            <slot/>
+        </div>
+    </body>
+    <Footer></Footer>
+</html>
+
+

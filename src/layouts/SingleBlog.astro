@@ -1,0 +1,14 @@
+---
+import Main from "./Main.astro";
+
+const { frontmatter, title } = Astro.props
+let pagetitle = title ? title : frontmatter.title
+
+---
+<Main title={pagetitle}>
+    <article class="max-w-6xl prose prose-slate mx-auto ">
+        <slot/>
+    </article>
+</Main>
+
+
