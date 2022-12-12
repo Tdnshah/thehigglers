@@ -5,22 +5,21 @@ import TopAnnouncement from "../components/TopAnnouncement.astro";
 const { frontmatter, title } = Astro.props
 let pagetitle = title ? title : frontmatter.title
 let pageNav = await Astro.glob('../pages/*.astro');
-
 ---
 <html lang="en">
     <Header title={ pagetitle }></Header>
-    <body class="container mx-auto">
+    <body class="container mx-auto scrollbar-hide">
         <TopAnnouncement></TopAnnouncement>
-        <nav class="flex justify-between">
+        <nav class="flex justify-between border-b-2 border-yellow-600 pb-2">
             <div class="w-56 my-auto">
                <a href="/"> <h1 class="border-2 border-yellow-600 text-xl p-2 text-center font-bold tracking-tight leading-tight">thehigglers company</h1></a>
             </div>
             <ul class="flex my-auto">
-                <a href="/"><li class="border-2 border-yellow-600 p-2 ml-2">Home</li></a>
-                <a href={pageNav[0].url}> <li class="border-2 border-yellow-600 p-2 ml-2"> About us </li></a>
-                <a href={pageNav[4].url}> <li class="border-2 border-yellow-600 p-2 ml-2"> Services </li></a>
-                <a href={pageNav[1].url}> <li class="border-2 border-yellow-600 p-2 ml-2"> Blog </li></a>
-                <a href={pageNav[2].url}> <li class="border-2 border-yellow-600 p-2 ml-2"> Contact Us </li></a>
+                <a href="/"><li class="border-2 border-yellow-600 p-2 hover:bg-yellow-600 hover:text-white">Home</li></a>
+                <a href={pageNav[0].url}> <li class="border-2 border-yellow-600 p-2 ml-2 hover:bg-yellow-600 hover:text-white"> About us </li></a>
+                <!-- <a href={pageNav[4].url}> <li class="border-2 border-yellow-600 p-2 ml-2 hover:bg-yellow-600 hover:text-white"> Services </li></a> -->
+                <a href={pageNav[1].url}> <li class="border-2 border-yellow-600 p-2 ml-2 hover:bg-yellow-600 hover:text-white"> Blog </li></a>
+                <a href={pageNav[2].url}> <li class="border-2 border-yellow-600 p-2 ml-2 hover:bg-yellow-600 hover:text-white"> Contact Us </li></a>
             </ul>
         </nav>
         <div class="my-5">
@@ -29,5 +28,18 @@ let pageNav = await Astro.glob('../pages/*.astro');
     </body>
     <Footer></Footer>
 </html>
+
+<style is:global>
+    /* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+</style>
 
 

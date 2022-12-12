@@ -1,11 +1,13 @@
 ---
-let allPosts = await Astro.glob('../pages/data/blogs/*.md');
+let allPosts = await Astro.glob('../pages/blogs/*.md');
 ---
 
 <div class="flex justify-center">
     {allPosts.slice(0, 6).map((post) => (
-      <article class="border-2 p-12 m-2 border-2 border-yellow-600">
-        <h3>{post.frontmatter.title}</h3>
+      <article class="border-2 p-5 m-2 border-2 border-yellow-600">
+        <h3 class="py-2 border-b-2 border-gray-500">{post.frontmatter.title}</h3>
+
+        <p class="py-2">{post.frontmatter.description}</p>
         <a href={post.url}> Read more... </a>
         <hr>
       </article>
