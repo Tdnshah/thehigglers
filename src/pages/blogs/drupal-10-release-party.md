@@ -14,12 +14,11 @@ tags: ['events']
 # Drupal 10 launch parties arranged by drupal international community
 
 ## Drupal India Association
-![DIA Drupal 10 release party banner]("../../../../../public/assets/blog/images/1670568915127.jpeg "Qed42 banner") 
-Drupal India Association is asking drupal india community members to celebrate Drupal 10 launch on December 14th 2022 by interested members can [Register here](https://lnkd.in/ge383Mnz)
+
+<Image src="/assets/blog/images/1670568915127.jpeg" aspectRatio="0.5" alt="DIA banner">
 
 ## Qed42 has arranged and inperson Drupal 10 launch party
-
-![Qed42 Drupal 10 release party banner]("../../../../../public/assets/blog/images/1670845590953.jpeg "Qed42 banner") 
+<Image src="/assets/blog/images/1670845590953.jpeg" aspectRatio="1" alt="Qed42 banner">
 
 Qed42 has arranged an in person event in pune, they will be having some sessions about the new and shiny things in Drupal 10 over pizzas and soft drinks and some in-person chit-chat. 
 
@@ -27,9 +26,10 @@ Qed42 has arranged an in person event in pune, they will be having some sessions
 If you would like to share something related to the new and shiny Drupal 10 please comment with your session topic, short description and name of speakers on this post. We are looking for 30-45mins long sessions and will be accepting proposals till 12th December 2022.
 
 Community member located in and nearby Pune or willing to travel to pune can join an in person event interested members will have to [Register Here](https://bit.ly/3Y9cc3T)
-
+public/assets/1670825048poster..jpg
 
 ## ICFOSS is arranging a Drupal 10 Release Party and Global Training Day 2022
+<Image src="/assets/blog/images/1670825048poster.jpg" aspectRatio="1" alt="icfoss bg image">
 
 The international center for free and open source software (ICFOSS) is organising a Drupal 10 release party following up with a Drupal Training day 17th December 2022 from 10.00 am to 5.00 pm, at ICFOSS, Sports Hub, Karyavattom, Trivandrum.
 

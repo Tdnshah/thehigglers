@@ -3,9 +3,10 @@ import Main from "./Main.astro";
 
 const { frontmatter, title } = Astro.props
 let pagetitle = title ? title : frontmatter.title
+let pagedescription = frontmatter.description
 
 ---
-<Main title={pagetitle}>
+<Main title={pagetitle} description={pagedescription}>
     <article class="max-w-6xl prose prose-slate mx-auto ">
         <slot/>
     </article>

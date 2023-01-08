@@ -2,12 +2,18 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import TopAnnouncement from "../components/TopAnnouncement.astro";
-const { frontmatter, title } = Astro.props
-let pagetitle = title ? title : frontmatter.title
+
+const { title, description } = Astro.props
+
+let pagetitle = title
+
+let pagedescription = description ? description : "A technology company expertised in delivering enterprised opensoure solutions."
+
 let pageNav = await Astro.glob('../pages/*.astro');
+
 ---
 <html lang="en">
-    <Header title={ pagetitle }></Header>
+    <Header title={ pagetitle } description = {pagedescription}></Header>
     <body class="container mx-auto scrollbar-hide">
         <TopAnnouncement></TopAnnouncement>
         <nav class="flex justify-between border-b-2 border-yellow-600 pb-2">

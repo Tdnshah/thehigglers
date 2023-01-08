@@ -23,5 +23,6 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://thehigglers.com',
   integrations: [tailwind(), sitemap(), mdx(), alpinejs(), compress(), prefetch(), image()]
 });
