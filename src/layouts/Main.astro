@@ -2,6 +2,8 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import TopAnnouncement from "../components/TopAnnouncement.astro";
+import Navbar from "../components/Navbar.astro";
+
 
 const { title, description } = Astro.props
 
@@ -14,23 +16,13 @@ let pageNav = await Astro.glob('../pages/*.astro');
 ---
 <html lang="en">
     <Header title={ pagetitle } description = {pagedescription}></Header>
-    <body class="container mx-auto scrollbar-hide">
-        <TopAnnouncement></TopAnnouncement>
-        <nav class="flex justify-between border-b-2 border-yellow-600 pb-2">
-            <div class="w-56 my-auto">
-               <a href="/"> <h1 class="border-2 border-yellow-600 text-xl p-2 text-center font-bold tracking-tight leading-tight">thehigglers company</h1></a>
-            </div>
-            <ul class="flex my-auto">
-                <a href="/"><li class="border-2 border-yellow-600 p-2 hover:bg-yellow-600 hover:text-white">Home</li></a>
-                <a href={pageNav[0].url}> <li class="border-2 border-yellow-600 p-2 ml-2 hover:bg-yellow-600 hover:text-white"> About us </li></a>
-                <!-- <a href={pageNav[4].url}> <li class="border-2 border-yellow-600 p-2 ml-2 hover:bg-yellow-600 hover:text-white"> Services </li></a> -->
-                <a href={pageNav[1].url}> <li class="border-2 border-yellow-600 p-2 ml-2 hover:bg-yellow-600 hover:text-white"> Blog </li></a>
-                <a href={pageNav[2].url}> <li class="border-2 border-yellow-600 p-2 ml-2 hover:bg-yellow-600 hover:text-white"> Contact Us </li></a>
-            </ul>
-        </nav>
-        <div class="my-5">
+    <body class="scrollbar-hide bg-teal-50">
+        <!-- <TopAnnouncement></TopAnnouncement> -->
+        <Navbar pageNav={pageNav} ></Navbar>
+        <div class="my-10 mx-auto">
             <slot/>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
     </body>
     <Footer></Footer>
 </html>
