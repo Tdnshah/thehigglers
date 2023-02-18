@@ -19,7 +19,7 @@ let pageNav = await Astro.glob('../pages/*.astro');
     <body class="scrollbar-hide bg-teal-50">
         <!-- <TopAnnouncement></TopAnnouncement> -->
         <Navbar pageNav={pageNav} ></Navbar>
-        <div class="my-10 mx-auto">
+        <div class="my-2 mx-auto">
             <slot/>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
