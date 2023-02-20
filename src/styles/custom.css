@@ -3,16 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 { color: #1c1c1c; font-family: 'Raleway',sans-serif; font-size: 10px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-transform: uppercase; }
+@layer components {
+    h1 { @apply mb-4 text-3xl font-extrabold dark:text-white md:text-4xl lg:text-6xl text-thc-blue-300 uppercase;font-family: 'Raleway',sans-serif;}
+    h5 { @apply mb-2 text-2xl font-bold tracking-tight text-thc-blue-300 dark:text-white }
+}
 
+h2 { color: #114169; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 24px 0 38px; }
 
-h2 { color: #1c1c1c; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; }
-
-
-p { color: #1c1c1c; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
+p { color: #114169; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
 
 
 article img{
     margin:auto;
     padding:2rem;
 }
+/*  */

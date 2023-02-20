@@ -5,7 +5,14 @@ module.exports = {
 				'./node_modules/flowbite/**/*.js'
 			],
 	theme: {
-		extend: {},
+		extend: {
+		},
+		colors: {
+			'thc-blue-100' : '#089fcf',
+			'thc-blue-200' : '#136e9d', 
+			'thc-blue-300' : '#114169', 
+			'thc-blue-400' : '#051937'
+		}
 	},
 	plugins: [
 		require('@tailwindcss/typography'),

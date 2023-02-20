@@ -1,5 +1,6 @@
 ---
 let year = new Date().getFullYear();
+import Logo from "./Logo.astro";
 ---
 <!-- <footer class="border-t-2 border-yellow-600">
   <div class="flex justify-between my-2">
@@ -42,15 +43,17 @@ let year = new Date().getFullYear();
     </ul>
   </div>
 </footer> -->
+<div class="h-24 bg-thc-blue-300">
+  
+</div>
+<div class="h-20 bg-thc-blue-400">
 
+</div>
 
 <footer class="lg:px-0 md:px-6 md:py-8 dark:bg-gray-900 max-w-screen-xl mx-auto">
-  <div class="sm:flex sm:items-center sm:justify-between">
-    <a href="/" class="flex items-center">
-      <img src="/public/assets/branding/black-hole.svg" class="xl:h-12 mr-3 sm:h-9" alt="thehigglers-company-logo" />
-      <span class="self-center text-3xl whitespace-nowrap dark:text-white">thehigglers company</span>
-    </a>
-      <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+  <div class="sm:flex sm:items-center sm:justify-between mx-auto">
+      <Logo></Logo>
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-thc-blue-300 sm:mb-0 dark:text-gray-400">
           <li>
               <a href="/about" class="mr-4 hover:underline md:mr-6 ">About</a>
           </li>
@@ -61,12 +64,12 @@ let year = new Date().getFullYear();
               <a href="/terms-of-use" class="mr-4 hover:underline md:mr-6 ">Terms Of Use</a>
           </li>
           <li>
-              <a href="/contact-us" class="hover:underline">Contact</a>
+              <a href="/contact" class="hover:underline">Contact</a>
           </li>
       </ul>
   </div>
-  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-  <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"><a href="/" class="hover:underline">Copyright © {year} Thehigglers Company. </a> All Rights Reserved.
+  <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-2 border-thc-blue-300" />
+  <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-thc-blue-300"><a href="/" class="hover:underline">Copyright © {year} Thehigglers Company. </a> All Rights Reserved.
   </span>
 </footer>
 
