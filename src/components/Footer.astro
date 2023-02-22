@@ -1,6 +1,7 @@
 ---
 let year = new Date().getFullYear();
 import Logo from "./Logo.astro";
+import SocialIcon from "../components/SocialIcon.astro";
 ---
 <!-- <footer class="border-t-2 border-yellow-600">
   <div class="flex justify-between my-2">
@@ -43,17 +44,29 @@ import Logo from "./Logo.astro";
     </ul>
   </div>
 </footer> -->
-<div class="h-24 bg-thc-blue-300">
-  
+<!-- <div class="p-20 bg-thc-blue-300">
+  <div class="max-w-screen-xl mx-auto">
+    
+  </div>
+</div> -->
+<div class="p-10 bg-thc-blue-400">
+  <div class="max-w-screen-xl mx-auto flex flex-wrap justify-between">
+    <h2 class="text-white m-0"> How We Can Help You With Your Next Project?</h2>
+    <div class="my-auto">
+      <a href="/contact" class="inline-flex items-center px-10 py-3 text-sm  font-medium text-center bg-white text-thc-blue-300 rounded-lg hover:bg-thc-blue-200  hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Lets Connect
+        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </a>
+    </div>
+    <SocialIcon></SocialIcon>
+  </div>
 </div>
-<div class="h-20 bg-thc-blue-400">
 
-</div>
+<footer class="lg:px-0 md:px-6 md:py-8 dark:bg-white-900 max-w-screen-xl mx-auto">
 
-<footer class="lg:px-0 md:px-6 md:py-8 dark:bg-gray-900 max-w-screen-xl mx-auto">
   <div class="sm:flex sm:items-center sm:justify-between mx-auto">
       <Logo></Logo>
-      <ul class="flex flex-wrap items-center mb-6 text-sm text-thc-blue-300 sm:mb-0 dark:text-gray-400">
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-thc-blue-300 sm:mb-0 dark:text-white-400">
           <li>
               <a href="/about" class="mr-4 hover:underline md:mr-6 ">About</a>
           </li>
@@ -68,8 +81,8 @@ import Logo from "./Logo.astro";
           </li>
       </ul>
   </div>
-  <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-2 border-thc-blue-300" />
-  <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 text-thc-blue-300"><a href="/" class="hover:underline">Copyright © {year} Thehigglers Company. </a> All Rights Reserved.
+  <hr class="my-2 border-white-200 sm:mx-auto dark:border-white-700 lg:my-2 border-thc-blue-300" />
+  <span class="block text-sm text-white-500 sm:text-center dark:text-white-400 text-thc-blue-300"><a href="/" class="hover:underline">Copyright © {year} Thehigglers Company. </a> All Rights Reserved.
   </span>
 </footer>
 
