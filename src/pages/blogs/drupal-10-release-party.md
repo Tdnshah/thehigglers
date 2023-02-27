@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/SingleBlog.astro'
 title: "DRUPAL 10 LAUNCH PARTIES ARRANGED BY DRUPAL INTERNATIONAL COMMUNITY"
-date: "2022-12-13 02:42:32"
+pubDate: "2022-12-13 02:42:32"
 slug:
 type: "event"
 author: "tdnshah"

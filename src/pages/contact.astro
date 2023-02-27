@@ -68,20 +68,20 @@ import Main from "../layouts/Main.astro";
 <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
     function test(){
-        event.preventDefault()
-        var visitorEmail = document.getElementById('floating_email').value;
-        var visitorFirstName = document.getElementById('floating_first_name').value;
-        var visitorLastName =  document.getElementById('floating_last_name').value;
-        var visitorPhoneNumber = document.getElementById('floating_phone').value;
-        var vistorCompany = document.getElementById('floating_company').value;
-        var visitorMessage = document.getElementById('floating_message').value;
-
-        var subject = "Their is an Inquiry on Thehigglers.com from Mr. " + visitorFirstName + " " + visitorLastName +"."
-
-        var message = "Mr." + visitorFirstName + " " + visitorLastName + " has an inquiry on thehigglers.com. He has left a message as below " + visitorMessage + " He's contact details are Phone Number: " + visitorPhoneNumber + " Email: " + visitorEmail + " Company: " + vistorCompany +". Please contact him as soon as possible."
-
-        var emailStatus = sendEmail(subject, message, "contactForm",  "successMessage");
- 
+        let visitorEmail = document.getElementById('floating_email').value;
+        let visitorFirstName = document.getElementById('floating_first_name').value;
+        let visitorLastName =  document.getElementById('floating_last_name').value;
+        let visitorPhoneNumber = document.getElementById('floating_phone').value;
+        let vistorCompany = document.getElementById('floating_company').value;
+        let visitorMessage = document.getElementById('floating_message').value;
+        
+        let subject = "Their is an Inquiry on Thehigglers.com from Mr. " + visitorFirstName + " " + visitorLastName +".";
+        
+        let message = "Mr." + visitorFirstName + " " + visitorLastName + " has an inquiry on thehigglers.com. He has left a message as below " + visitorMessage + " He's contact details are Phone Number: " + visitorPhoneNumber + " Email: " + visitorEmail + " Company: " + vistorCompany +". Please contact him as soon as possible.";
+        
+        let emailStatus = sendEmail(subject, message, "contactForm",  "successMessage");
+        
+        event.preventDefault();
     }
 
     function sendEmail(subject, message, elementToHideId, elementIdToShow) {
