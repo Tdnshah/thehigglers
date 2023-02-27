@@ -22,7 +22,9 @@ import prefetch from "@astrojs/prefetch";
 import image from "@astrojs/image";
 
 // https://astro.build/config
+
+// https://astro.build/config
 export default defineConfig({
   site: 'https://thehigglers.com',
-  integrations: [tailwind({config: { applyBaseStyles: false },}), sitemap(), mdx(), alpinejs(), compress(), prefetch(), image()]
+  integrations: [tailwind(), sitemap(), mdx(), alpinejs(), compress(), prefetch(), image()]
 });

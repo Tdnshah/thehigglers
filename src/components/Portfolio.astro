@@ -1,0 +1,71 @@
+---
+import PinkHighlightedSectionName from "./PinkHighlightedSectionName.astro";
+
+const currentPage = await Astro.url.pathname;
+
+const  services = [
+    {
+        "clientName" : "creavids.co",
+        "clientLogo" : "",
+        "serviceDescription" : "Our development service include all range of development from a static website to a completely dynamic datadriven web applications.",
+        "clientImage" : "../../assets/portfolio/creavids.png",
+        "clientSiteLink" : "/services/webdevelopment"
+    },
+    {
+        "clientName" : "Prayog An Indian Institute of Technology, Bombay Project",
+        "clientLogo" : "",
+        "serviceDescription" : "Designing is the core part of any brand which creates the identity of the brand and we help you in developing this identity by our website designing service.",
+        "clientImage" : "../../assets/portfolio/prayog_iitb.png",
+        "clientSiteLink" : "/services/webdesign"
+    }, 
+    {
+        "clientName" : "Rahul Vitekar",
+        "clientLogo" : "../../public/assets/portfolio/rahulvitekar.png",
+        "serviceDescription" : "We help business understand & develop data driven dashboard for their business which helps them get insight and take data driven decision.",
+        "clientImage" : "../../assets/portfolio/rahulvitekar.png",
+        "clientSiteLink" : "/services/dataanalytics"
+    },  
+    {
+        "clientName" : "Mash Global",
+        "clientLogo" : "../../assets/portfolio/mashglobal.png",
+        "serviceDescription" : "We help business understand & develop data driven dashboard for their business which helps them get insight and take data driven decision.",
+        "clientImage" : "../../assets/portfolio/mashglobal.png",
+        "clientSiteLink" : "/services/dataanalytics"
+    },
+
+    
+]
+let Heading = "max-w-screen-md mb-8 lg:mb-16"
+let showOnFrontPage = "hidden"
+if(currentPage == '/') {    
+    showOnFrontPage = "block"
+     Heading = 'hidden max-w-screen-md mb-8 lg:mb-16'
+}
+
+---
+<PinkHighlightedSectionName heading="Our Work" showOnFrontPage={showOnFrontPage}></PinkHighlightedSectionName>
+<section class="dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class={Heading}>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"></h2>
+            <p class="text-gray-500 sm:text-xl dark:text-gray-400"></p>
+        </div>
+        <div class="md:grid md:grid-cols-2 lg:grid-cols-2 space-y-8  md:gap-12 md:space-y-0 justify-between">
+        { services.map((service) => (
+            <div class="relative group h-auto max-w-sm lg:max-w-2xl border border-pink-500 rounded-lg">
+                <img
+                src={service.clientImage}
+                class="rounded-lg shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"
+                alt="" />
+                <div class="absolute rounded-lg bottom-0 left-0 right-0 px-4 py-2 bg-pink-500 hidden group-hover:block">
+                    <h3 class="text-xl text-white font-bold">
+                        {service.clientName }</h3>
+                    <p class="mt-2 text-sm text-white">{service.serviceDescription}</p>
+                </div>
+            </div>
+            
+        ))}
+        </div>
+     </div>
+  </section> 
+

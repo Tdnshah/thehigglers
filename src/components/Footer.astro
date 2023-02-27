@@ -2,6 +2,7 @@
 let year = new Date().getFullYear();
 import Logo from "./Logo.astro";
 import SocialIcon from "../components/SocialIcon.astro";
+let url = Astro.url;
 ---
 <!-- <footer class="border-t-2 border-yellow-600">
   <div class="flex justify-between my-2">
@@ -51,38 +52,42 @@ import SocialIcon from "../components/SocialIcon.astro";
 </div> -->
 <div class="p-10 bg-thc-blue-400">
   <div class="max-w-screen-xl mx-auto flex flex-wrap justify-between">
-    <h2 class="text-white m-0"> How We Can Help You With Your Next Project?</h2>
-    <div class="my-auto">
+    <h2 class="text-white m-0 text-center lg:text-left"> How We Can Help You With Your Next Project?</h2>
+    <div class="my-auto mx-auto lg:mx-0">
       <a href="/contact" class="inline-flex items-center px-10 py-3 text-sm  font-medium text-center bg-white text-thc-blue-300 rounded-lg hover:bg-thc-blue-200  hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         Lets Connect
         <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
       </a>
     </div>
-    <SocialIcon></SocialIcon>
+    <div class="mx-auto lg:m-0">
+      <SocialIcon fontColor="text-white hover:text-thc-blue-200" icon_w="10" icon_h="10" url={url}></SocialIcon>
+    </div>
   </div>
 </div>
 
 <footer class="lg:px-0 md:px-6 md:py-8 dark:bg-white-900 max-w-screen-xl mx-auto">
 
-  <div class="sm:flex sm:items-center sm:justify-between mx-auto">
+  <div class="flex flex-wrap items-center justify-center lg:justify-between mx-auto py-5 lg:py-0">
       <Logo></Logo>
-      <ul class="flex flex-wrap items-center mb-6 text-sm text-thc-blue-300 sm:mb-0 dark:text-white-400">
-          <li>
-              <a href="/about" class="mr-4 hover:underline md:mr-6 ">About</a>
+      <div>
+        <ul class="flex flex-wrap lg:space-x-2 items-center justify-center text-sm py-5 lg:py-0text-thc-blue-300 dark:text-white-400">
+          <li class="marker:text-thc-blue-300 lg:list-disc">
+            <a href="/sitemap-index.xml" class="mr-4 hover:underline">Sitemap</a>
           </li>
-          <li>
-              <a href="/privacy-policy" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          <li class="marker:text-thc-blue-300 lg:list-disc">
+            <a href="/privacy-policy" class="mr-4 hover:underline">Privacy Policy</a>
           </li>
-          <li>
-              <a href="/terms-of-use" class="mr-4 hover:underline md:mr-6 ">Terms Of Use</a>
+          <li class="marker:text-thc-blue-300 lg:list-disc">
+              <a href="/terms-of-use" class="mr-4 hover:underline">Terms Of Use</a>
           </li>
-          <li>
-              <a href="/contact" class="hover:underline">Contact</a>
+          <li class="marker:text-thc-blue-300 lg:list-disc">
+            <a href="/rss.xml" class="mr-4 hover:underline">RSS Feeds</a>
           </li>
-      </ul>
+        </ul>
+    </div>
   </div>
-  <hr class="my-2 border-white-200 sm:mx-auto dark:border-white-700 lg:my-2 border-thc-blue-300" />
-  <span class="block text-sm text-white-500 sm:text-center dark:text-white-400 text-thc-blue-300"><a href="/" class="hover:underline">Copyright © {year} Thehigglers Company. </a> All Rights Reserved.
+  <hr class="my-2 border-white-200 mx-auto dark:border-white-700 lg:my-2 border-thc-blue-300" />
+  <span class="block text-sm text-white-500 text-center dark:text-white-400 text-thc-blue-300"><a href="/" class="hover:underline">Copyright © {year} Thehigglers Company. </a> All Rights Reserved.
   </span>
 </footer>
 
