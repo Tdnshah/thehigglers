@@ -3,5 +3,8 @@
         "activityBar.background": "#56180D",
         "titleBar.activeBackground": "#782212",
         "titleBar.activeForeground": "#FEF8F7"
-    }
+    },
+    "autoSnippet.snippets": [
+        { "pattern": "**/*.md", "snippet": "The higglers astro site blog markdown file" },
+      ],
 }

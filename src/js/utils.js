@@ -50,3 +50,12 @@ export function slugify(text) {
     return filteredPosts;
   
   }
+
+export function formatCaptalize(str){
+    const lower = str.toLowerCase();
+    return str.charAt(0).toUpperCase() + lower.slice(1);
+}
+
+export function limitString (string = '', limit = 0) {  
+  return string.substring(0, limit)
+}

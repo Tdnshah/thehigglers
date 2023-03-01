@@ -10,6 +10,8 @@
 
 h2 { @apply text-thc-blue-300 sm:text-lg lg:text-3xl; font-family: 'Raleway',sans-serif; font-weight: 800; line-height: 36px; margin: 24px 0 38px; }
 
+h3 { @apply text-thc-blue-300 sm:text-lg lg:text-xl; font-family: 'Raleway',sans-serif; font-weight: 800; line-height: 36px; margin: 24px 0 38px; }
+
 p { color: #114169; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
 
 

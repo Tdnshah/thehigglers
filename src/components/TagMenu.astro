@@ -1,0 +1,28 @@
+---
+import { array, object } from "astro/zod";
+import { limitString, formatCaptalize } from "../js/utils";
+
+const allBlogs = await Astro.glob("../pages/blogs/*.md");
+
+const allTags = new Set()
+allBlogs.map(post => {
+    post.frontmatter.tags && post.frontmatter.tags.map(tag => {allTags.add(tag)});
+})
+
+const allTagsArray = [];
+allTags.forEach(element => {
+    allTagsArray.push( element);
+});
+---
+<div class="p-2 bg-thc-blue-400">
+    <div class="max-w-screen-lg mx-auto">
+        <ul class="flex flex-wrap text-white">
+            {
+                allTagsArray.map((e) => (
+                    <li class="p-3"><a href={"/blogs/tags/"+e}>{formatCaptalize(e)}</a></li>
+                ))
+            }
+        </ul>
+    </div>
+  </div>
+

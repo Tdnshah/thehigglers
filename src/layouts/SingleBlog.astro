@@ -6,7 +6,7 @@ const { frontmatter, title } = Astro.props
 let pagetitle = title ? title : frontmatter.title
 let pagedescription = frontmatter.description
 let author = frontmatter.author
-let date = new Date(frontmatter.date).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
+let date = new Date(frontmatter.pubDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
 const url = Astro.url
 ---
 <Main title={pagetitle} description={pagedescription}>

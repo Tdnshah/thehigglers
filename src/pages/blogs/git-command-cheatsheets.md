@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/SingleBlog.astro'
 title: Git commands cheatsheets
-pubDate: "2022-12-13 02:42:32"
+pubDate: 2022-12-13 02:42:32
 slug:
 type: "blog"
 author: "tdnshah"

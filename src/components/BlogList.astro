@@ -12,7 +12,7 @@ if(path == '/') {
 ---
 
 <PinkHighlightedSectionName heading="blog" showOnFrontPage={showOnFrontPage}></PinkHighlightedSectionName>
-<div class="flex flex-wrap lg:px-6 lg:space-x-4 m-3 lg-m-0">
+<div class="flex flex-wrap lg:px-6 lg:space-x-2 m-3 lg-m-0">
     
       <!-- <article class="border-2 p-5 m-2 border-2 border-yellow-600">
         <h3 class="py-2 border-b-2 border-gray-500"></h3>
@@ -35,7 +35,7 @@ if(path == '/') {
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{post.frontmatter.description.split(" ").splice(0,20).join(" ")}</p>
                     <div class="flex my-2 space-x-2">
                         {post.frontmatter.tags.map((tag)=>(
-                            <a href={"/"+tag}>
+                            <a href={"/blogs/tags/"+tag}>
                                 <div class="p-1 rounded-lg border border-pink-500 text-sm text-thc-blue-300 hover:shadow-xl hover:bg-pink-500 hover:text-white"> {tag} </div>    
                             </a>
                         ))}

@@ -1,17 +1,17 @@
 ---
 layout: '../../layouts/SingleBlog.astro'
 title: "DRUPAL 10 LAUNCH PARTIES ARRANGED BY DRUPAL INTERNATIONAL COMMUNITY"
-pubDate: "2022-12-13 02:42:32"
-slug:
+pubDate: 2022-12-13 02:42:32
 type: "event"
-author: "tdnshah"
 description: "Drupal 10 is releasing on 14th Dec 2022, hence drupal community have arranged few online and offline events, the details of this events are and registration links for the same have beem collated in this blog post."
 link: 
 embed: 
 video: 
 image_link: "https://loremflickr.com/400/200/events"
 slides: 
-tags: ['events', 'drupal']
+tags: ['events', 'drupal', 'development']
+slug:
+author: "tdnshah"
 ---
 ## Drupal India Association
 
