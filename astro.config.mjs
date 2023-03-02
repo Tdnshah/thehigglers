@@ -23,5 +23,11 @@ import image from "@astrojs/image";
 
 export default defineConfig({
   site: 'https://thehigglers.com/',
-  integrations: [tailwind(), sitemap(), mdx(), alpinejs(), compress(), prefetch(), image()]
+  integrations: [tailwind(
+    {
+      // Example: Disable injecting a basic `base.css` import on every page.
+      // Useful if you need to define and/or import your own custom `base.css`.
+      config: { applyBaseStyles: false },
+    }
+  ), sitemap(), mdx(), alpinejs(), compress(), prefetch(), image()]
 });

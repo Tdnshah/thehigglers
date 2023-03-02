@@ -1,5 +1,7 @@
 ---
 import SocialIcon from "../components/SocialIcon.astro";
+import { getReadingTime } from "../js/utils";
+import Blog from "../pages/blog.astro";
 import Main from "./Main.astro";
 
 const { frontmatter, title } = Astro.props
@@ -8,15 +10,19 @@ let pagedescription = frontmatter.description
 let author = frontmatter.author
 let date = new Date(frontmatter.pubDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
 const url = Astro.url
+const htmlContent = await Astro.slots.render('default');
 ---
 <Main title={pagetitle} description={pagedescription}>
     <article class="max-w-6xl prose prose-sm lg:prose-base prose-headings:text-thc-blue-300 lg:prose-hr:my-0 lg:mx-auto text-justify m-4 my-24">
-        <h1 class="text-center mb-0">{frontmatter.title}</h1>
+        <h1 class="text-center mb-0">{frontmatter.title}</h1> 
         <hr>
         <div class="flex flex-wrap justify-between mx-auto mb-10">
             <div>
                 <h6 class="mb-1.5"><strong>Authored By : </strong>{author}</h6>
                 <SocialIcon fontColor="text-thc-blue-400 hover:text-thc-blue-200" icon_w="5" icon_h="5" url={url}></SocialIcon>
+            </div>
+            <div>
+                <p class="text-center mb-0">{getReadingTime(htmlContent)} minutes read</p>
             </div>
             <div>
                 <h6 class="m-0"><strong>Published On</strong><br>{date}</h6>
@@ -33,4 +39,5 @@ const url = Astro.url
         ></div>
         <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </article>
+
 </Main>

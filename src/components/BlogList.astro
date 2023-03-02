@@ -1,11 +1,14 @@
 ---
 import PinkHighlightedSectionName from "./PinkHighlightedSectionName.astro";
+import { getReadingTime } from "../js/utils";
 
 let allPosts = await Astro.glob('../pages/blogs/*.md');
 let path  = await Astro.url.pathname;
 let noOfBlogToLoad = 6;
 let showOnFrontPage = "hidden"
+let isFrontPage = false;
 if(path == '/') {
+    isFrontPage = true;
     showOnFrontPage = "block"
     noOfBlogToLoad = 3
 }
@@ -48,5 +51,11 @@ if(path == '/') {
                 </div>
             </div>    
         </a> 
-         ))}
+         ))}    
   </div>
+  {
+    isFrontPage ? <div class="text-center my-5">
+    <a href="/blog" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-thc-blue-300 rounded-lg hover:bg-thc-blue-200  hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">More Blogs</a>
+</div> : ""
+  }
+  
