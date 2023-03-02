@@ -59,3 +59,13 @@ export function formatCaptalize(str){
 export function limitString (string = '', limit = 0) {  
   return string.substring(0, limit)
 }
+
+//Get Read time
+
+export function getReadingTime(content) {
+  const WORDS_PER_MINUTE = 200;
+  if (!content) return;
+  const clean = content.replace(/<\/?[^>]+(>|$)/g, '');
+  const numberOfWords = clean.split(/\s/g).length;
+  return Math.ceil(numberOfWords / WORDS_PER_MINUTE);
+}
