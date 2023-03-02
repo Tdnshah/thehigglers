@@ -1,22 +1,18 @@
 /* The integration's default injected base.css file */
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
 @layer components {
     h1 { @apply mb-4 text-3xl font-extrabold dark:text-white md:text-4xl lg:text-6xl text-thc-blue-300 uppercase;font-family: 'Raleway',sans-serif;}
+    h2 { @apply text-thc-blue-300 sm:text-lg lg:text-3xl; font-family: 'Raleway',sans-serif; font-weight: 800; line-height: 36px; margin: 24px 0 38px; }
+    h3 { @apply text-thc-blue-300 sm:text-lg lg:text-xl; font-family: 'Raleway',sans-serif; font-weight: 800; }
     h5 { @apply mb-2 text-2xl font-bold tracking-tight text-thc-blue-300 dark:text-white }
+    p { color: #114169; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; }
 }
+@tailwind utilities;
 
-h2 { @apply text-thc-blue-300 sm:text-lg lg:text-3xl; font-family: 'Raleway',sans-serif; font-weight: 800; line-height: 36px; margin: 24px 0 38px; }
-
-h3 { @apply text-thc-blue-300 sm:text-lg lg:text-xl; font-family: 'Raleway',sans-serif; font-weight: 800; line-height: 36px; margin: 24px 0 38px; }
-
-p { color: #114169; font-family: 'Raleway',sans-serif; font-size: 18px; font-weight: 500; line-height: 32px; margin: 0 0 24px; }
 
 
 article img{
     margin:auto;
     padding:2rem;
 }
-/*  */

@@ -23,7 +23,14 @@ const url = Astro.url
             </div>
         </div>
         <slot/>
+        <hr class="py-10">
+        <div id="cusdis_thread" 
+        data-host="https://cusdis.com"
+        data-app-id="a74fa1b8-dc14-449a-841a-73d4c930afd0"
+        data-page-id={pagetitle}
+        data-page-url={url}
+        data-page-title={pagetitle}
+        ></div>
+        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </article>
 </Main>
-
-

@@ -5,21 +5,24 @@ const {title, description} = Astro.props;
 const seo_title = "Thehigglers | " + title;
 const seo_description =  description ;
 import '../styles/custom.css';
+const isProductionMode = import.meta.env.MODE == "production" ? true :false;
+
+
+
 ---
 <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F7JNPQMNHW"></script>
-    <script>
+    {isProductionMode ? <script async src="https://www.googletagmanager.com/gtag/js?id=G-F7JNPQMNHW"></script> : ""}
+    {isProductionMode ? <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-F7JNPQMNHW');
-    </script>
+    </script> : ""}
 </head>
 <head>
     <SEO
