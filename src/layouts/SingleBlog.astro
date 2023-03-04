@@ -14,11 +14,15 @@ const htmlContent = await Astro.slots.render('default');
 ---
 <Main title={pagetitle} description={pagedescription}>
     <article class="max-w-6xl prose prose-sm lg:prose-base prose-headings:text-thc-blue-300 lg:prose-hr:my-0 lg:mx-auto text-justify m-4 my-24">
-        <h1 class="text-center mb-0">{frontmatter.title}</h1> 
-        <div class="flex flex-wrap lg:justify-between mt-10">
-            <div class="w-full my-3 lg:my-0 lg:w-auto">
+        <h1 class="text-center mb-0">{frontmatter.title}</h1>
+        <hr>
+        <div class="flex flex-wrap justify-between mx-auto mb-10">
+            <div>
                 <h6 class="mb-1.5"><strong>Authored By : </strong>{author}</h6>
                 <SocialIcon fontColor="text-thc-blue-400 hover:text-thc-blue-200" icon_w="5" icon_h="5" url={url}></SocialIcon>
+            </div>
+            <div>
+                <p class="text-center mb-0">{getReadingTime(htmlContent)} minutes read</p>
             </div>
             <div class="w-full my-3 lg:my-0 lg:w-auto">
                 <!-- Lyket like dislike functionality -->
@@ -51,4 +55,3 @@ const htmlContent = await Astro.slots.render('default');
     </article>
 
 </Main>
-<script is:inline src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_e7ccbb5fd86c5f1970a028d24ac6c5"></script>
