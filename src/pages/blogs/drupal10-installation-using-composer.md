@@ -1,4 +1,5 @@
 ---
+uuid: 96310611-db01-4bb8-99f3-37078255f87d
 layout: '../../layouts/SingleBlog.astro'
 title: Drupal 10 installation using composer.
 pubDate: 2023-03-01 02:43:59

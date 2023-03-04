@@ -1,4 +1,5 @@
 ---
+uuid: ae88be6c-e875-4747-b624-db7a2cfcfa52
 layout: '../../layouts/SingleBlog.astro'
 title: "DRUPAL 10 LAUNCH PARTIES ARRANGED BY DRUPAL INTERNATIONAL COMMUNITY"
 pubDate: 2022-12-13 02:42:32

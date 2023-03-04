@@ -15,29 +15,40 @@ const htmlContent = await Astro.slots.render('default');
 <Main title={pagetitle} description={pagedescription}>
     <article class="max-w-6xl prose prose-sm lg:prose-base prose-headings:text-thc-blue-300 lg:prose-hr:my-0 lg:mx-auto text-justify m-4 my-24">
         <h1 class="text-center mb-0">{frontmatter.title}</h1> 
-        <hr>
-        <div class="flex flex-wrap justify-between mx-auto mb-10">
-            <div>
+        <div class="flex flex-wrap lg:justify-between mt-10">
+            <div class="w-full my-3 lg:my-0 lg:w-auto">
                 <h6 class="mb-1.5"><strong>Authored By : </strong>{author}</h6>
                 <SocialIcon fontColor="text-thc-blue-400 hover:text-thc-blue-200" icon_w="5" icon_h="5" url={url}></SocialIcon>
             </div>
-            <div>
-                <p class="text-center mb-0">{getReadingTime(htmlContent)} minutes read</p>
+            <div class="w-full my-3 lg:my-0 lg:w-auto">
+                <!-- Lyket like dislike functionality -->
+                <div class="text-lg lg:text-center"
+                data-lyket-type="clap"
+                data-lyket-id={frontmatter.uuid}
+                data-lyket-namespace="blog"
+                data-lyket-template="medium"
+                />
+                <span class="text-center my-0">{getReadingTime(htmlContent)} minutes read</span>
             </div>
-            <div>
+            <div class="w-full my-3 lg:my-0 lg:w-auto">
                 <h6 class="m-0"><strong>Published On</strong><br>{date}</h6>
             </div>
         </div>
+        <hr class="lg:py-5">
         <slot/>
         <hr class="py-10">
+
+        <!-- Cusdis comments sections. -->
         <div id="cusdis_thread" 
-        data-host="https://cusdis.com"
-        data-app-id="a74fa1b8-dc14-449a-841a-73d4c930afd0"
-        data-page-id={pagetitle}
-        data-page-url={url}
-        data-page-title={pagetitle}
-        ></div>
+            data-host="https://cusdis.com"
+            data-app-id="a74fa1b8-dc14-449a-841a-73d4c930afd0"
+            data-page-id={frontmatter.uuid}
+            data-page-url={url}
+            data-page-title={pagetitle}
+        >
+        </div>
         <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </article>
 
 </Main>
+<script is:inline src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_e7ccbb5fd86c5f1970a028d24ac6c5"></script>
