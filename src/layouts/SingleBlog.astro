@@ -7,12 +7,14 @@ import Main from "./Main.astro";
 const { frontmatter, title } = Astro.props
 let pagetitle = title ? title : frontmatter.title
 let pagedescription = frontmatter.description
+let pageImage = frontmatter.image_link
 let author = frontmatter.author
 let date = new Date(frontmatter.pubDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
 const url = Astro.url
 const htmlContent = await Astro.slots.render('default');
+const tags = frontmatter.tags;
 ---
-<Main title={pagetitle} description={pagedescription}>
+<Main title={pagetitle} description={pagedescription} image_link = {pageImage}>
     <article class="max-w-6xl prose prose-sm lg:prose-base prose-headings:text-thc-blue-300 lg:prose-hr:my-0 lg:mx-auto text-justify m-4 my-24">
         <h1 class="text-center mb-0">{frontmatter.title}</h1>
         <hr class="lg:py-3">

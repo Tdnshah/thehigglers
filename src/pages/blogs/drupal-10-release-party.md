@@ -8,11 +8,11 @@ description: "Drupal 10 is releasing on 14th Dec 2022, hence drupal community ha
 link: 
 embed: 
 video: 
-image_link: "https://loremflickr.com/400/200/events"
 slides: 
-tags: ['events', 'drupal', 'development']
 slug:
+tags: ['events', 'drupal', 'development']
 author: "tdnshah"
+image_link: "https://loremflickr.com/400/200/events"
 ---
 ## Drupal India Association
 

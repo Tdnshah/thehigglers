@@ -1,15 +1,14 @@
 ---
 import { SEO } from "astro-seo";
 
-const {title, description} = Astro.props;
+const {title, description, image_link} = Astro.props;
 const seo_title = "Thehigglers | " + title;
 const seo_description =  description ;
+const seo_image = image_link;
 import '../styles/custom.css';
 const isProductionMode = import.meta.env.MODE == "production" ? true :false;
-
-
-
 ---
+
 <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
@@ -27,5 +26,40 @@ const isProductionMode = import.meta.env.MODE == "production" ? true :false;
 <head>
     <SEO
         title = {seo_title}
-        description={seo_description} />
+        description={seo_description} 
+        openGraph={{
+            basic: {
+              title: seo_title,
+              type: 'blog',
+              image: seo_image,
+            },
+            optional: {
+                description: seo_description
+
+            }
+          }}
+          twitter={{
+            card: 'summary_large_image',
+            creator: "@tdnshah",
+            title: seo_title,
+            description: seo_description,
+            image: seo_image
+          }}
+          extend={{
+            // extending the default link tags
+            link: [{ rel: "icon", href: "/favicon.ico" }],
+            // extending the default meta tags
+            meta: [
+              {
+                name: "twitter:image",
+                content: seo_image,
+              },
+              { name: "twitter:title", content: seo_title },
+              { name: "twitter:description", content: seo_description },
+            ],
+          }}
+        
+        
+        
+        />
 </head>
