@@ -4,9 +4,10 @@ import { SEO } from "astro-seo";
 const {title, description, image_link} = Astro.props;
 const seo_title = "Thehigglers | " + title;
 const seo_description =  description ;
-const seo_image = image_link;
+const seo_image = "https://thehigglers.com" + image_link;
 import '../styles/custom.css';
 const isProductionMode = import.meta.env.MODE == "production" ? true :false;
+
 ---
 
 <head>
@@ -43,10 +44,10 @@ const isProductionMode = import.meta.env.MODE == "production" ? true :false;
             creator: "@tdnshah",
             title: seo_title,
             description: seo_description,
-            image: seo_image
+            image: import.meta.env.BASE_URL + "/" + seo_image
           }}
           extend={{
-            // extending the default link tags
+            // extending the default link tag
             link: [{ rel: "icon", href: "/favicon.ico" }],
             // extending the default meta tags
             meta: [
