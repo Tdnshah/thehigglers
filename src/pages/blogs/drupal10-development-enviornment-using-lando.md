@@ -105,9 +105,9 @@ So in this step we will use lando to create and manage our docker based developm
 
 1. cd into the project root directory 
    
-   ```
-   cd {install directory}
-   ```
+```
+cd {install directory}
+```
 
 2. Run below command
 
