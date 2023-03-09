@@ -12,8 +12,10 @@ slides:
 slug: []
 tags: ["drupal", "development"]
 author: [tdnshah]
-image_link: "https://loremflickr.com/400/200/drupal"
+image_link: "/assets/blog/images/lando-drupal.webp"
 ---
+
+<Image src="/assets/blog/images/lando-drupal.webp" aspectRatio="0.5" alt="Drupal_Lando_Dev_Setup_Image">
 
 Drupal 8 onwards it is preety much clear that Drupal has adopted the standard php development practises and this is followed by all the latest release of Drupal like Drupal 9 and Drupal 10.
 
