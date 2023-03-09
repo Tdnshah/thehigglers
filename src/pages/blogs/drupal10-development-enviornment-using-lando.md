@@ -100,3 +100,86 @@ Ah, but we have downloaded or installed any database yet now we have it in the t
 
 But how does all this work, it all happens with .lando.yml file which we will generate now in the next step.
 #### Step 4: Initialize lando in 
+
+So in this step we will use lando to create and manage our docker based development enviornment, follow below steps to intialise lando
+
+1. cd into the project root directory 
+   
+   ```
+   cd {install directory}
+   ```
+
+2. Run below command
+
+```
+    lando init
+
+```
+Note: At this step lando will prompt you to select few options as below 
+
+```
+1st Prompt:
+    ? From where should we get your app's codebase? (Use arrow keys)
+        acquia 
+        ❯ current working directory  [**Select this option and press enter**]
+        github 
+        lagoon 
+        pantheon 
+        platformsh 
+        remote git repo or archive 
+
+2nd Prompt:
+    ? From where should we get your app's codebase? current working directory
+    ? What recipe do you want to use? 
+        wordpress 
+        acquia 
+        backdrop 
+        ❯ drupal10 [**Select Drupal 10 option and press enter**]
+        drupal6 
+        drupal7 
+        drupal8 
+    (Move up and down to reveal more choices)
+(Note: In this prompt navigate the option but clicking down arrow in you terminal)
+
+3rd Prompt:
+    Where is your webroot relative to the init destination? (.)  > ./web [** Type "./web" as when we create a drupal project using create-project script the docroot is inside web directory of our codebase.**]
+
+4th Prompt:
+    ? From where should we get your app's codebase? current working directory
+    ? What recipe do you want to use? drupal10
+    ? Where is your webroot relative to the init destination? ./web
+    ? What do you want to call this app? (My Lando App) SomeNameToYourProject [** Here you can give any name to your project**]
+
+Wallahhh you are all set.
+```
+After all the above promts getting answered you should be able to see a new file in your project directory name .lando.yml. This file stores all the configurations we just made by answering the lando prompts.
+
+(Note: This is a one time process, here onwards you will not have to answer any prompts or follow such a long process.)
+
+Now to start your lando/docker containers run the below command
+
+```
+ Run this command at project root where you can see the .lando.yml file
+
+lando start
+
+(Give some time for lando to download the images and start the containers)
+
+ Output:
+
+
+```
+
+You can see that after some time and some scrappy letters in the terminal lando has outputed a set of urls and thats it you are all set open this url in the browser and you will see Drupal Installation page.
+
+For database credentials you can use below credential as every lando Drupal 10 project has it same.
+
+Database Name: Drupal10 
+
+Database User Name: Drupal10
+
+Database User Password: Drupal10
+
+Database host : datatable
+
+
