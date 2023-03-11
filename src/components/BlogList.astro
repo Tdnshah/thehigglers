@@ -1,6 +1,7 @@
 ---
 import PinkHighlightedSectionName from "./PinkHighlightedSectionName.astro";
 import { getReadingTime } from "../js/utils";
+import { log } from "astro/dist/core/logger/core";
 
 let allPosts = await Astro.glob('../pages/blogs/*.md');
 let path  = await Astro.url.pathname;
@@ -27,9 +28,9 @@ if(path == '/') {
 
       {allPosts.slice(0, noOfBlogToLoad ).map((post) => (
         <a href={post.url}>
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 my-2">
+            <div class="w-1/3 max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 my-2">
                 <a href={post.url}>
-                    <img class="rounded-t-lg h-48 object-contain" src={post.frontmatter.image_link} alt="" />
+                    <img class="rounded-t-lg h-48 object-contain" src={typeof post.frontmatter.image_link === 'string' ? post.frontmatter.image_link :  import.meta.env.SITE + "assets/branding/thehigglers-placeholder.png"} alt="" />
                 </a>
                 <div class="p-5">   
                     <a href={post.url}>
