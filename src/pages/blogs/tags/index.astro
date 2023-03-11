@@ -1,0 +1,33 @@
+---
+import { array, object } from "astro/zod";
+
+import { limitString, formatCaptalize } from "../../../js/utils";
+
+import Main from "../../../layouts/Main.astro";
+
+const allBlogs = await Astro.glob("../*.md");
+
+const allTags = new Set()
+allBlogs.map(post => {
+    post.frontmatter.tags && post.frontmatter.tags.map(tag => {allTags.add(tag)});
+})
+
+const allTagsArray = [];
+allTags.forEach(element => {
+    allTagsArray.push( element);
+});
+---
+<Main title="Tags list">
+    <div class="max-w-screen-xl mx-auto my-10">
+        <div class="">
+            <div class="my-5"><h3>List of tags : </h3></div>
+            <ul class="flex flex-wrap space-x-4 justify-center">
+                { 
+                    allTagsArray.map((e) => (
+                        <li class="p-3 rounded-full border border-thc-blue-200 p-2 text-center font-bold"><a href={"/blogs/tags/"+e}>{formatCaptalize(e)}</a></li>
+                    ))
+                }
+            </ul>
+        </div>
+    </div>
+</Main>

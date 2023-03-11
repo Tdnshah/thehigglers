@@ -1,0 +1,21 @@
+---
+import LandingPage from "../components/LandingPage.astro";
+import Main from "../layouts/Main.astro";
+<!-- 
+const data = await fetch('https://jsonplaceholder.typicode.com/posts');
+const posts = await data.json(); -->
+---
+<Main title="Services">
+    <LandingPage></LandingPage>
+    <!-- <h1>Service</h1>
+    <ul>
+        {posts.slice(0, 6).map((post) => (
+            <article class="border-2 p-12 m-2 border-2 border-yellow-600">
+              <h3>{post.title}</h3>
+              <p set:html={post.body}></p>
+              <a href={"posts/" + post.id }> Read more... </a>
+              <hr>
+            </article>
+          ))}
+    </ul> -->
+</Main>

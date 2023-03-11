@@ -1,0 +1,74 @@
+---
+import PinkHighlightedSectionName from "./PinkHighlightedSectionName.astro";
+
+const currentPage = await Astro.url.pathname;
+
+const  services = [
+    {
+        "serviceName" : "Web Development.",
+        "serviceIcon" : "",
+        "serviceDescription" : "Our development service include all range of development from a static website to a completely dynamic datadriven web applications.",
+        "serviceReadMore" : "/services/webdevelopment"
+    },
+    {
+        "serviceName" : "Web Designing.",
+        "serviceIcon" : "",
+        "serviceDescription" : "Designing is the core part of any brand which creates the identity of the brand and we help you in developing this identity by our website designing service.",
+        "serviceReadMore" : "/services/webdesign"
+    }, 
+    {
+        "serviceName" : "Web Hosting.",
+        "serviceIcon" : "",
+        "serviceDescription" : "We provide a fully secure and reliable website hosting service with 24X7 support on call and whatsapp.",
+        "serviceReadMore" : "/services/webhosting"
+    },  
+    {
+        "serviceName" : "Data Analytics.",
+        "serviceIcon" : "",
+        "serviceDescription" : "We help business understand & develop data driven dashboard for their business which helps them get insight and take data driven decision.",
+        "serviceReadMore" : "/services/dataanalytics"
+    },  
+    {
+        "serviceName" : "ERP Solutioning.",
+        "serviceIcon" : "",
+        "serviceDescription" : "E-commerce, manufaturing plants or small stores and ERP can help manage, track and optimize day to day operations and we help business setup ERP for there business.",
+        "serviceReadMore" : "/services/erpsolutioning"
+    },
+    {
+        "serviceName" : "Digital Marketing & SEO.",
+        "serviceIcon" : "",
+        "serviceDescription" : "We help business build there marketing operations by automating marketing campagins using martech technologies helping reduced cost of marketing and high yeilds.",
+        "serviceReadMore" : "/services/digitalmarketing"
+    },
+    
+]
+let Heading = "max-w-screen-md mb-8 lg:mb-16"
+let showOnFrontPage = "hidden"
+if(currentPage == '/') {    
+    showOnFrontPage = "block"
+    Heading = 'hidden max-w-screen-md mb-8 lg:mb-16'
+}
+
+---
+
+<section class="dark:bg-gray-900">
+    <PinkHighlightedSectionName heading="Services" showOnFrontPage={showOnFrontPage} ></PinkHighlightedSectionName>
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        
+        <div class={Heading}>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
+            <p class="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+        </div>
+        <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+        { services.map((service) => (
+        <div class="border border-pink-500 p-4 rounded-lg shadow-lg">
+            <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-pink-100 lg:h-12 lg:w-12 dark:bg-pink-900">
+                <svg class="w-5 h-5 text-pink-500 lg:w-6 lg:h-6 dark:text-pink-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+            </div>
+            <h3 class="mb-2 text-thc-blue-300 text-xl font-bold dark:text-white">{service.serviceName}</h3>
+            <p class="text-thc-blue-300 dark:text-gray-400 text-justify">{service.serviceDescription}</p>
+            
+        </div>
+        ))}
+    </div>
+  </section>    

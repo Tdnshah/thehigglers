@@ -1,0 +1,43 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import TopAnnouncement from "../components/TopAnnouncement.astro";
+import Navbar from "../components/Navbar.astro";
+
+
+const { title, description, image_link } = Astro.props
+
+let pagetitle = title
+
+let pagedescription = description ? description : "A technology company expertised in delivering enterprised opensoure solutions."
+
+let pageImage = image_link ? image_link : "/assets/branding/thehigglers-placeholder.png"
+
+let pageNav = await Astro.glob('../pages/*.astro');
+
+---
+<html lang="en">
+    <Header title={ pagetitle } description = {pagedescription} image_link = {pageImage}></Header>
+    <body class="scrollbar-hide bg-teal-50">
+        <!-- <TopAnnouncement></TopAnnouncement> -->
+        <Navbar pageNav={pageNav} ></Navbar>
+        <div class="my-2 mx-auto">
+            <slot/>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+    </body>
+    <Footer></Footer>
+</html>
+
+<style is:global>
+    /* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+</style>

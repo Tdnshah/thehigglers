@@ -1,0 +1,108 @@
+---
+import Button from "../components/Button.astro";
+import LandingPage from "../components/LandingPage.astro";
+import Main from "../layouts/Main.astro";
+import { Image, Picture } from '@astrojs/image/components';
+const imageUrl = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
+---
+<Main title="About">
+    <!-- Container for demo purpose -->
+<div class="max-w-screen-xl mx-auto">
+
+    <!-- Section: Design Block -->
+    <section class="mb-10 text-gray-800 text-center md:text-left">
+      <div class="my-20">
+        <h1 class="text-white mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"><span class="before:block before:absolute before:-inset-3 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+            <span class="relative text-white">About Us</span>
+            </span>
+        </h1>
+    </div>
+      <div class="block rounded-lg">
+        <div class="flex flex-wrap items-center">
+          <div class="grow-0 shrink-0 basis-auto block lg:flex w-full h-full lg:w-6/12 xl:w-5/12">
+            <img src="https://images.unsplash.com/photo-1668184162944-7ce7cdf1fc35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80x" alt="Trendy Pants and Shoes" class="w-full rounded-t-lg lg:rounded-tr-lg lg:rounded-bl-lg sepia" />
+          </div>
+          <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-7/12">
+            <div class="px-6 md:px-12">
+              <p class="text-black mb-6 pb-2">
+                The higglers Company started of from the founder's house as a hobbyist project the first project into web development, was never limited to it there after projects into graphics designing, data analytics,explainer video animation and so on, we have grown ourselves through our projects and the commitments have never been under delivered and thats how retain our client base.
+              </p>
+              <p class="text-black-500 mb-6 pb-2">
+               As from the first para of the intrduction you may have understood that we grown in a very diverse professions & hence the name comes of our company was thought upon, the dictionary meaning of the <strong>Higglers</strong> is as below : <br> <br>
+             
+                <code class="bg-black text-white">
+                  higgler <br>
+                  /ˈhɪɡlə/ <br>
+                  nounWEST INDIAN<br>
+                  plural noun: higglers <br>
+                  a person who travels around selling small items.<br>
+                </code>
+              </p>
+              
+              <div class="flex flex-wrap mb-6">
+                <div class="w-full lg:w-6/12 xl:w-4/12 mb-4">
+                  <p class="flex items-center justify-center md:justify-start">
+                    <svg class="w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="#114169"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                      </path>
+                    </svg> Software Developement
+                  </p>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-4/12 mb-4">
+                  <p class="flex items-center justify-center md:justify-start">
+                    <svg class="w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="#114169"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                      </path>
+                    </svg> Infrastructure Management
+                  </p>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-4/12 mb-4">
+                  <p class="flex items-center justify-center md:justify-start">
+                    <svg class="w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="#114169"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                      </path>
+                    </svg>ERP implementation & hosting
+                  </p>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-4/12 mb-4">
+                  <p class="flex items-center justify-center md:justify-start">
+                    <svg class="w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="#114169"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                      </path>
+                    </svg>Web Hosting
+                  </p>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-4/12 mb-4">
+                  <p class="flex items-center justify-center md:justify-start">
+                    <svg class="w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="#114169"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                      </path>
+                    </svg> Graphics Designing
+                  </p>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-4/12 mb-4">
+                  <p class="flex items-center justify-center md:justify-start">
+                    <svg class="w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path fill="#114169"
+                        d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
+                      </path>
+                    </svg> Digital Marketing
+                  </p>
+                </div>
+              </div>
+              <Button url="/contact">Get In Touch</Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  
+  </div>
+  <!-- Container for demo purpose -->
+</Main>

@@ -1,0 +1,16 @@
+---
+import Main from "../layouts/Main.astro";
+import BlogList from "../components/BlogList.astro";
+---
+
+<Main title="Blog">
+    <div class="max-w-screen-xl mx-auto my-10">
+        <div class="my-20">
+            <h1 class="text-white mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"><span class="before:block before:absolute before:-inset-3 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+                <span class="relative text-white">Blog</span>
+                </span>
+            </h1>
+        </div>
+        <BlogList></BlogList>
+    </div>
+</Main>
