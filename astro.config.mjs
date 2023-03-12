@@ -25,7 +25,6 @@ export default defineConfig({
 
   site: 'https://thehigglers.com/',
   base: '/',
-  output: 'server',
   integrations: [tailwind(
     {
       // Example: Disable injecting a basic `base.css` import on every page.
