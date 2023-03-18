@@ -16,7 +16,7 @@ tags:
   - astrojs
 author: tdnshah
 image_link: /assets/blog/images/3d29bde7-2418-4a97-b300-ad893c389019-img-1.png
-lastmod: 2023-03-18T10:48:25.067Z
+lastmod: 2023-03-18T10:59:25.877Z
 ---
 
 Recently I was looking for better was to manage the markdown files of for my static blog website and I didnt want to leave behind editor interface just to write a new blog article as I am too lazy to switch between multiple interfaces. Hence while I was searching on the google if any such simple products exsist which looks a CMS. 
@@ -33,19 +33,18 @@ Yes, Frontmatter CMS once configured provides a nice grid interface listing all 
 
   ![Frontmatter CMS Dashboard](/assets/blog/images/3d29bde7-2418-4a97-b300-ad893c389019-img-2.png)
 
-
-
-1. A nice markdown editor for creating, editing and updating articles ?
+2. A nice markdown editor for creating, editing and updating articles ?
 
 This is where I found Frontmatter CMS needs to improve as in the current interface it provides if we try to edit any article it just open a file in vs code which as a claimed CMS should have a proper wisysig editor like Quilljs or editorjs etc.
 
-3. I wanted some frontmatter to be auto populated like published date, last modified date etc..?
+4. I wanted some frontmatter to be auto populated like published date, last modified date etc..?
   
 Yes, FrontMatter CMS provide this as a feature, I havent yet tried but wanted this feauture for other frontmatters like UUID etc, but I am sure there might be an api to create either a custom field for such custom requirements.
 
-4. Nice interface to select list of tags/categories alsready used in other posts so that duplicated with spelling changes can be avoided like blog & blogs?
+5. Nice interface to select list of tags/categories alsready used in other posts so that duplicated with spelling changes can be avoided like blog & blogs?
 
 Yes, Frontmatter CMS provides a nice interface with select list type of fields and also prepopulates  the tags used in all the posts this is done using a content type defination in frontmatter.json file
+
 ![Frontmatter CMS Tags select list.](/assets/blog/images/3d29bde7-2418-4a97-b300-ad893c389019-img-3.png)
 
 I am still exploring new features and how it can be used as a CMS in IDE and will keep updateing thos post so that others can also leverage this awesome in IDE CMS for static sites.
