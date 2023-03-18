@@ -7,6 +7,7 @@ module.exports = {
 			],
 	theme: {
 		fontFamily: {
+			'zen' :[ 'Zen Kaku Gothic New'],
 			'body': [
 		  'Inter', 
 		  'ui-sans-serif', 
@@ -22,7 +23,7 @@ module.exports = {
 		  'Apple Color Emoji', 
 		  'Segoe UI Emoji', 
 		  'Segoe UI Symbol', 
-		  'Noto Color Emoji'
+		  'Noto Color Emoji',
 		],
 			'sans': [
 		  'Inter', 
@@ -39,7 +40,8 @@ module.exports = {
 		  'Apple Color Emoji', 
 		  'Segoe UI Emoji', 
 		  'Segoe UI Symbol', 
-		  'Noto Color Emoji'
+		  'Noto Color Emoji',
+		  'Zen Kaku Gothic New'
 		]
 		},
 		extend: {

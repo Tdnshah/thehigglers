@@ -18,7 +18,7 @@ let pageNav = await Astro.glob('../pages/*.astro');
 ---
 <html lang="en">
     <Header title={ pagetitle } description = {pagedescription} image_link = {pageImage}></Header>
-    <body class="scrollbar-hide bg-teal-50">
+    <body class="scrollbar-hide bg-teal-50 font-zen">
         <!-- <TopAnnouncement></TopAnnouncement> -->
         <Navbar pageNav={pageNav} ></Navbar>
         <div class="my-2 mx-auto">
