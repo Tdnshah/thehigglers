@@ -6,5 +6,17 @@
     },
     "autoSnippet.snippets": [
         { "pattern": "**/*.md", "snippet": "The higglers astro site blog markdown file" },
-      ],
+    ],
+    "frontMatter.content.autoUpdateDate": true,
+    "frontMatter.preview.host": "http://localhost:3000",
+    "frontMatter.framework.startCommand": "npm run dev",
+    "[markdown]": {
+        "editor.fontSize": 14,
+        "editor.lineHeight": 26,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 64,
+        "editor.lineNumbers": "off",
+        "editor.quickSuggestions": false,
+        "editor.minimap.enabled": false
+    },
 }

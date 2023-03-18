@@ -1,0 +1,117 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "uuid",
+          "name": "uuid",
+          "type": "string"
+        },
+        {
+          "title": "layout",
+          "name": "layout",
+          "type": "string",
+          "default": "../../layouts/SingleBlog.astro",
+          "editable": false
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "pubDate",
+          "name": "pubDate",
+          "type": "datetime"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "choice",
+          "choices": [
+            "blog",
+            "events"
+
+          ],
+          "default": "blog"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "link",
+          "name": "link",
+          "type": "string"
+        },
+        {
+          "title": "embed",
+          "name": "embed",
+          "type": "string"
+        },
+        {
+          "title": "video",
+          "name": "video",
+          "type": "string"
+        },
+        {
+          "title": "slides",
+          "name": "slides",
+          "type": "list"
+        },
+        {
+          "title": "slug",
+          "name": "slug",
+          "type": "fields",
+          "fields": []
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "choice",
+          "choices": [
+            "tdnshah"
+          ]
+        },
+        {
+          "title": "image_link",
+          "name": "image_link",
+          "type": "string",
+          "default": "/assets/branding/thehigglers-placeholder.png",
+          "required": true
+
+        },
+        {
+          "title": "lastmod",
+          "name": "lastmod",
+          "type": "datetime"
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "other",
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "blogs",
+      "path": "[[workspace]]/src/pages/blogs"
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    "development",
+    "drupal",
+    "events",
+    "git"
+  ],
+  "frontMatter.taxonomy.categories": []
+}
