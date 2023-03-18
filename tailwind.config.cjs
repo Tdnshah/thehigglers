@@ -51,8 +51,9 @@ module.exports = {
 			'thc-blue-100' : '#089fcf',
 			'thc-blue-200' : '#136e9d', 
 			'thc-blue-300' : '#114169', 
-			'thc-blue-400' : '#051937'
-
+			'thc-blue-400' : '#051937',
+			'thc-blue-bg' : '#edfafa',
+			'thc-pink-bg:' : '#e64694',
 		}
 	},
 	plugins: [
