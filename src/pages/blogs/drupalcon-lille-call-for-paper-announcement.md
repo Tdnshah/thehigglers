@@ -1,18 +1,22 @@
 ---
 uuid: 6d400cbd-143e-4155-94b7-94cbaff1a59d
-layout: '../../layouts/SingleBlog.astro'
-title: DrupalCon Lille 2023 Call for Papers Now Open. 
+layout: ../../layouts/SingleBlog.astro
+title: DrupalCon Lille 2023 Call for Papers Now Open.
 pubDate: 2023-03-15 00:37:17
-type: 'Blog'
-description: DrupalCon Lille was anounced a few months back and now a call for seesions has been announced, hurry and submit your sessions.
-link: 
-embed: 
-video: 
-slides: 
-tags: [events]
-slug: []
-author: [tdnshah]
-image_link: "/assets/blog/images/6d400cbd-143e-4155-94b7-94cbaff1a59d-img-1.png"
+type: Blog
+description: DrupalCon Lille was anounced a few months back and now a call for seesions has
+  been announced, hurry and submit your sessions.
+link: null
+embed: null
+video: null
+slides: null
+tags:
+  - events
+slug: drupalcon-lille-2023-call-papers-open
+author:
+  - tdnshah
+image_link: /assets/blog/images/6d400cbd-143e-4155-94b7-94cbaff1a59d-img-1.png
+lastmod: 2023-03-17T11:47:22.822Z
 ---
 
 

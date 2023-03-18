@@ -1,18 +1,23 @@
 ---
 uuid: a2ec452e-3627-457e-a216-d1b0129f0b6d
-layout: '../../layouts/SingleBlog.astro'
+layout: ../../layouts/SingleBlog.astro
 title: Git commands cheatsheets
 pubDate: 2022-12-13 02:42:32
-type: "blog"
-description: This posts is a collection of commonly used git command with the description hwlping speed up developers in there day to day task.
-link: 
-embed: 
-video: 
-slides: 
-slug: []
-tags: ['git', 'development']
-author: [tdnshah]
-image_link: "https://loremflickr.com/400/200/git"
+type: blog
+description: This posts is a collection of commonly used git command with the description
+  helping speed up developers in there day to day task.
+link: null
+embed: null
+video: null
+slides: null
+slug: git-commands-cheatsheets
+tags:
+  - git
+  - development
+author:
+  - tdnshah
+image_link: /assets/blog/images/a2ec452e-3627-457e-a216-d1b0129f0b6d-img-1.png
+lastmod: 2023-03-17T11:46:16.290Z
 ---
 
 ### <a id="#git_reset">Git Reset</a>

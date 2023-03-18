@@ -1,18 +1,22 @@
 ---
 uuid: 96310611-db01-4bb8-99f3-37078255f87d
-layout: '../../layouts/SingleBlog.astro'
+layout: ../../layouts/SingleBlog.astro
 title: Drupal 10 development enviornment setup using lando..
 pubDate: 2023-03-01 02:43:59
-type: "blog"
+type: blog
 description: Drupal 10 development environment setup using lando.
-link: 
-embed: 
-video: 
-slides: 
-slug: []
-tags: ["drupal", "development"]
-author: [tdnshah]
-image_link: "/assets/blog/images/lando-drupal.webp"
+link: null
+embed: null
+video: null
+slides: null
+slug: drupal-10-development-enviornment-setup-lando
+tags:
+  - drupal
+  - development
+author:
+  - tdnshah
+image_link: /assets/blog/images/96310611-db01-4bb8-99f3-37078255f87d-img-1.png
+lastmod: 2023-03-17T11:45:47.757Z
 ---
 
 <Image src="/assets/blog/images/lando-drupal.webp" aspectRatio="0.5" alt="Drupal_Lando_Dev_Setup_Image">
