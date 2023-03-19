@@ -21,7 +21,7 @@ tags:
   - astrojs
 author: tdnshah
 image_link: /assets/blog/images/3d29bde7-2418-4a97-b300-ad893c389019-img-1.png
-lastmod: 2023-03-19T09:20:10.340Z
+lastmod: 2023-03-19T10:36:07.193Z
 ---
 
 Recently I was looking for better was to manage the markdown files of for my static blog website and I didnt want to leave behind editor interface just to write a new blog article as I am too lazy to switch between multiple interfaces. Hence while I was searching on the google if any such simple products exsist which looks a CMS. 

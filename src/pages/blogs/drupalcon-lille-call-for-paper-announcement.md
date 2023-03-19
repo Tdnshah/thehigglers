@@ -20,11 +20,11 @@ slug: drupalcon-lille-2023-call-papers-open
 author:
   - tdnshah
 image_link: /assets/blog/images/6d400cbd-143e-4155-94b7-94cbaff1a59d-img-1.png
-lastmod: 2023-03-19T09:21:04.088Z
+lastmod: 2023-03-19T10:35:54.922Z
 ---
 
 
-<Image src="/assets/blog/images/6d400cbd-143e-4155-94b7-94cbaff1a59d-img-1.png" aspectRatio="0.5" alt="Drupal_Lando_Dev_Setup_Image">
+<Image src="/assets/blog/images/6d400cbd-143e-4155-94b7-94cbaff1a59d-img-1.png" aspectRatio="0.5" alt="DrupalCon-lille-2023-blog-header-image">
 
 
 The Drupal community is gearing up for DrupalCon Lille 2023, which will take place in the charming city of Lille, France, from August 23-27, 2023. DrupalCon is the premier event for Drupal enthusiasts, and this year's conference promises to be an exceptional one. The organizers have announced that the call for papers is now open, and they're inviting submissions from the community.
