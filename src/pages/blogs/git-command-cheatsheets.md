@@ -4,8 +4,13 @@ layout: ../../layouts/SingleBlog.astro
 title: Git commands cheatsheets
 pubDate: 2022-12-13 02:42:32
 type: blog
-description: This posts is a collection of commonly used git command with the description
-  helping speed up developers in there day to day task.
+description: Looking to level up your Git skills? Our Git commands cheatsheets have you
+  covered! With our comprehensive collection of Git commands, you'll have all
+  the information you need to master this powerful version control system. From
+  basic commands to more advanced workflows, our cheatsheets will help you
+  become a Git expert in no time. Contact us today to learn more about how our
+  Git commands cheatsheets can help you streamline your workflow and become a
+  more efficient developer.
 link: null
 embed: null
 video: null
@@ -17,7 +22,7 @@ tags:
 author:
   - tdnshah
 image_link: /assets/blog/images/a2ec452e-3627-457e-a216-d1b0129f0b6d-img-1.png
-lastmod: 2023-03-17T11:46:16.290Z
+lastmod: 2023-03-19T09:19:42.484Z
 ---
 
 ### <a id="#git_reset">Git Reset</a>

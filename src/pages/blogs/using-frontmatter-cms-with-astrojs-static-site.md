@@ -4,8 +4,13 @@ layout: ../../layouts/SingleBlog.astro
 title: Using Frontmatter CMS with Astrojs Static Site
 pubDate: 2023-03-17T11:48:17.766Z
 type: blog
-description: Frontmatter a CMS in your code editor for your static site and markdown file
-  management.
+description: Looking for an easy way to manage content on your AstroJS static site? Look no
+  further than Frontmatter CMS! Our expert team can help you seamlessly
+  integrate Frontmatter CMS with your AstroJS static site, allowing you to
+  easily manage your content and keep your site up-to-date. With our knowledge
+  and experience, we'll work with you to create a customized solution that
+  perfectly fits your needs. Contact us today to learn more about how we can
+  help you streamline your content management with Frontmatter CMS and AstroJS.
 link: ""
 embed: ""
 video: ""
@@ -16,7 +21,7 @@ tags:
   - astrojs
 author: tdnshah
 image_link: /assets/blog/images/3d29bde7-2418-4a97-b300-ad893c389019-img-1.png
-lastmod: 2023-03-18T10:59:25.877Z
+lastmod: 2023-03-19T09:20:10.340Z
 ---
 
 Recently I was looking for better was to manage the markdown files of for my static blog website and I didnt want to leave behind editor interface just to write a new blog article as I am too lazy to switch between multiple interfaces. Hence while I was searching on the google if any such simple products exsist which looks a CMS. 
