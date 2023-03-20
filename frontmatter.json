@@ -24,6 +24,11 @@
           "type": "string"
         },
         {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
           "title": "pubDate",
           "name": "pubDate",
           "type": "datetime"
@@ -69,11 +74,6 @@
           "name": "slug",
           "type": "fields",
           "fields": []
-        },
-        {
-          "title": "tags",
-          "name": "tags",
-          "type": "tags"
         },
         {
           "title": "author",
