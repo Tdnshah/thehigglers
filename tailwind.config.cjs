@@ -7,6 +7,7 @@ module.exports = {
 			],
 	theme: {
 		fontFamily: {
+			'zen' :[ 'Zen Kaku Gothic New'],
 			'body': [
 		  'Inter', 
 		  'ui-sans-serif', 
@@ -22,7 +23,7 @@ module.exports = {
 		  'Apple Color Emoji', 
 		  'Segoe UI Emoji', 
 		  'Segoe UI Symbol', 
-		  'Noto Color Emoji'
+		  'Noto Color Emoji',
 		],
 			'sans': [
 		  'Inter', 
@@ -39,7 +40,8 @@ module.exports = {
 		  'Apple Color Emoji', 
 		  'Segoe UI Emoji', 
 		  'Segoe UI Symbol', 
-		  'Noto Color Emoji'
+		  'Noto Color Emoji',
+		  'Zen Kaku Gothic New'
 		]
 		},
 		extend: {
@@ -51,8 +53,9 @@ module.exports = {
 			'thc-blue-100' : '#089fcf',
 			'thc-blue-200' : '#136e9d', 
 			'thc-blue-300' : '#114169', 
-			'thc-blue-400' : '#051937'
-
+			'thc-blue-400' : '#051937',
+			'thc-blue-bg' : '#edfafa',
+			'thc-pink-bg:' : '#e64694',
 		}
 	},
 	plugins: [

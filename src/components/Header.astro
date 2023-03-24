@@ -32,8 +32,13 @@ const isProductionMode = import.meta.env.MODE == "production" ? true :false;
             basic: {
               title: seo_title,
               type: 'website',
-              image: seo_image,
+              image: seo_image              
             },
+            image: {
+                url: seo_image,
+                secureUrl: seo_image,
+                type: "image/png"
+              },
             optional: {
                 description: seo_description
 

@@ -1,21 +1,30 @@
 ---
 uuid: 96310611-db01-4bb8-99f3-37078255f87d
-layout: '../../layouts/SingleBlog.astro'
+layout: ../../layouts/SingleBlog.astro
 title: Drupal 10 development enviornment setup using lando..
 pubDate: 2023-03-01 02:43:59
-type: "blog"
-description: Drupal 10 development environment setup using lando.
-link: 
-embed: 
-video: 
-slides: 
-slug: []
-tags: ["drupal", "development"]
-author: [tdnshah]
-image_link: "/assets/blog/images/lando-drupal.webp"
+type: blog
+description: Get your Drupal 10 development environment up and running quickly and easily
+  with Lando! Our expert team has the knowledge and experience to help you set
+  up a customized development environment that's optimized for Drupal 10. With
+  Lando, you can streamline your workflow and focus on what matters most –
+  building great websites. Contact us today to learn more about how we can help
+  you get started with Drupal 10 development using Lando.
+link: null
+embed: null
+video: null
+slides: null
+slug: drupal-10-development-enviornment-setup-lando
+tags:
+  - drupal
+  - development
+author:
+  - tdnshah
+image_link: /assets/blog/images/96310611-db01-4bb8-99f3-37078255f87d-img-1.png
+lastmod: 2023-03-19T10:35:02.367Z
 ---
 
-<Image src="/assets/blog/images/lando-drupal.webp" aspectRatio="0.5" alt="Drupal_Lando_Dev_Setup_Image">
+<Image src="/assets/blog/images/96310611-db01-4bb8-99f3-37078255f87d-img-1.png" aspectRatio="0.5" alt="Drupal_Lando_Dev_Setup_Image">
 
 Drupal 8 onwards it is preety much clear that Drupal has adopted the standard php development practises and this is followed by all the latest release of Drupal like Drupal 9 and Drupal 10.
 
