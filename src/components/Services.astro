@@ -20,7 +20,7 @@ const  services = [
         "serviceName" : "Web Hosting.",
         "serviceIcon" : "",
         "serviceDescription" : "We provide a fully secure and reliable website hosting service with 24X7 support on call and whatsapp.",
-        "serviceReadMore" : "/services/webhosting"
+        "serviceReadMore" : "services/webhosting"
     },  
     {
         "serviceName" : "Data Analytics.",
@@ -63,7 +63,7 @@ if(currentPage == '/') {
             </div>
             <h3 class="mb-2 text-thc-blue-300 text-xl font-bold dark:text-white">{service.serviceName}</h3>
             <p class="text-thc-blue-300 dark:text-gray-400 text-justify">{service.serviceDescription}</p>
-            
+            <a class="block my-5 text-pink-500 hover:border hover:border-thc-blue-400 hover:rounded-lg hover:text-thc-blue-400 hover:w-1/2 hover:p-2" href={service.serviceReadMore}>Read More .....</a>
         </div>
         ))}
     </div>
