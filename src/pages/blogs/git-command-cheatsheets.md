@@ -4,13 +4,7 @@ layout: ../../layouts/SingleBlog.astro
 title: Git commands cheatsheets
 pubDate: 2022-12-13 02:42:32
 type: blog
-description: Looking to level up your Git skills? Our Git commands cheatsheets have you
-  covered! With our comprehensive collection of Git commands, you'll have all
-  the information you need to master this powerful version control system. From
-  basic commands to more advanced workflows, our cheatsheets will help you
-  become a Git expert in no time. Contact us today to learn more about how our
-  Git commands cheatsheets can help you streamline your workflow and become a
-  more efficient developer.
+description: Looking to level up your Git skills? Our Git commands cheatsheets have you covered! With our comprehensive collection of Git commands, you'll have all the information you need to master this powerful version control system. From basic commands to more advanced workflows, our cheatsheets will help you become a Git expert in no time. Contact us today to learn more about how our Git commands cheatsheets can help you streamline your workflow and become a more efficient developer.
 link: null
 embed: null
 video: null
@@ -22,7 +16,8 @@ tags:
 author:
   - tdnshah
 image_link: /assets/blog/images/a2ec452e-3627-457e-a216-d1b0129f0b6d-img-1.png
-lastmod: 2023-03-20T21:43:30.746Z
+status: published
+lastmod: 2023-04-03T21:20:06.003Z
 ---
 
 ### <a id="#git_reset">Git Reset</a>

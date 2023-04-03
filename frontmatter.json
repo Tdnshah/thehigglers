@@ -89,7 +89,17 @@
           "type": "string",
           "default": "/assets/branding/thehigglers-placeholder.png",
           "required": true
-
+        },
+        {
+          "title": "status",
+          "name": "status",
+          "type": "choice",
+          "default": "draft",
+          "required": true,
+          "choices" : [
+            "draft",
+            "published"
+          ]
         },
         {
           "title": "lastmod",

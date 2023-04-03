@@ -4,12 +4,7 @@ layout: ../../layouts/SingleBlog.astro
 title: DrupalCon Lille 2023 Call for Papers Now Open.
 pubDate: 2023-03-15 00:37:17
 type: Blog
-description: Attention all Drupal enthusiasts! The call for papers for DrupalCon Lille 2023
-  is now open. Don't miss your chance to share your expertise and insights with
-  the Drupal community. Whether you're a seasoned Drupal pro or just getting
-  started, we want to hear from you. Submit your paper today and join us in
-  Lille for this exciting event. Contact us to learn more about DrupalCon Lille
-  2023 and the call for papers.
+description: Attention all Drupal enthusiasts! The call for papers for DrupalCon Lille 2023 is now open. Don't miss your chance to share your expertise and insights with the Drupal community. Whether you're a seasoned Drupal pro or just getting started, we want to hear from you. Submit your paper today and join us in Lille for this exciting event. Contact us to learn more about DrupalCon Lille 2023 and the call for papers.
 link: null
 embed: null
 video: null
@@ -20,7 +15,8 @@ slug: drupalcon-lille-2023-call-papers-open
 author:
   - tdnshah
 image_link: /assets/blog/images/6d400cbd-143e-4155-94b7-94cbaff1a59d-img-1.png
-lastmod: 2023-03-19T10:35:54.922Z
+status: published
+lastmod: 2023-04-03T21:20:11.190Z
 ---
 
 

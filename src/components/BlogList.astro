@@ -4,7 +4,10 @@ import { getReadingTime } from "../js/utils";
 import { log } from "astro/dist/core/logger/core";
 
 let allPosts = await Astro.glob('../pages/blogs/*.md');
-const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate));
+
+let publishedPost = allPosts.filter(el => el.frontmatter.status === 'published')
+
+const sortedPosts = publishedPost.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate));
 let path  = await Astro.url.pathname;
 let noOfBlogToLoad = 6;
 let showOnFrontPage = "hidden"
