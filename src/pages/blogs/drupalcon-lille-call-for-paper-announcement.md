@@ -11,12 +11,13 @@ video: null
 slides: null
 tags:
   - events
+  - drupal-planet
 slug: drupalcon-lille-2023-call-papers-open
 author:
   - tdnshah
 image_link: /assets/blog/images/6d400cbd-143e-4155-94b7-94cbaff1a59d-img-1.png
 status: published
-lastmod: 2023-04-03T21:20:11.190Z
+lastmod: 2023-04-09T10:25:18.527Z
 ---
 
 

@@ -12,10 +12,11 @@ slides: ""
 slug: {}
 tags:
   - drupal hooks
+  - drupal-planet
 author: ""
 image_link: /assets/branding/thehigglers-placeholder.png
 status: draft
-lastmod: 2023-04-04T20:14:54.287Z
+lastmod: 2023-04-09T10:24:34.412Z
 ---
 
 # Introduction to Drupal Hook system with hook_info()

@@ -4,7 +4,7 @@ layout: ../../layouts/SingleBlog.astro
 title: How to create a custom token for Drupal
 pubDate: 2023-03-20T20:53:47.523Z
 type: blog
-description: Personalize your Drupal website by creating custom tokens. Our step-by-step guide teaches you how to add personalised values to your site using custom tokens.
+description: Drupal tutorial showcasing how to create a custom tokens in drupal.
 link: ""
 embed: ""
 video: ""
@@ -13,10 +13,11 @@ slug: {}
 tags:
   - development
   - drupal
+  - drupal-planet
 author: ""
 image_link: /assets/blog/images/dc24f02a-bf20-4919-9b43-c3584ea29346-img-1.png
 status: published
-lastmod: 2023-04-08T13:43:49.962Z
+lastmod: 2023-04-09T10:23:42.837Z
 ---
 
 <Image src="/assets/blog/images/dc24f02a-bf20-4919-9b43-c3584ea29346-img-1.png" aspectRatio="0.5" alt="Drupal_custom_token">
