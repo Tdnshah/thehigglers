@@ -1,7 +1,7 @@
 ---
 uuid: 96310611-db01-4bb8-99f3-37078255f87d
 layout: ../../layouts/SingleBlog.astro
-title: Drupal 10 development enviornment setup using lando..
+title: Drupal 10 development environment setup using lando..
 pubDate: 2023-03-01 02:43:59
 type: blog
 description: Get your Drupal 10 development environment up and running quickly and easily with Lando! Our expert team has the knowledge and experience to help you set up a customized development environment that's optimized for Drupal 10. With Lando, you can streamline your workflow and focus on what matters most – building great websites. Contact us today to learn more about how we can help you get started with Drupal 10 development using Lando.
@@ -9,7 +9,7 @@ link: null
 embed: null
 video: null
 slides: null
-slug: drupal-10-development-enviornment-setup-lando
+slug: drupal-10-development-environmentt-setup-lando
 tags:
   - development
   - drupal
@@ -18,7 +18,7 @@ author:
   - tdnshah
 image_link: /assets/blog/images/96310611-db01-4bb8-99f3-37078255f87d-img-1.png
 status: published
-lastmod: 2023-04-09T10:25:04.041Z
+lastmod: 2023-04-13T13:29:38.029Z
 ---
 
 <Image src="/assets/blog/images/96310611-db01-4bb8-99f3-37078255f87d-img-1.png" aspectRatio="0.5" alt="Drupal_Lando_Dev_Setup_Image">
@@ -109,7 +109,7 @@ Ah, but we have downloaded or installed any database yet now we have it in the t
 But how does all this work, it all happens with .lando.yml file which we will generate now in the next step.
 #### Step 4: Initialize lando in 
 
-So in this step we will use lando to create and manage our docker based development enviornment, follow below steps to intialise lando
+So in this step we will use lando to create and manage our docker based development environmentt, follow below steps to intialise lando
 
 1. cd into the project root directory 
    

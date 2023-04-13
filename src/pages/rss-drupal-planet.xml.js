@@ -10,12 +10,13 @@ export async function get(context) {
     title: 'Thehigglers Company Blogs Rss Feeds for Drupal Planet.',
     description: 'Thehigglers Company is a web agency helping enterprises build there online presence.',
     site: context.site,
+    customData: "<webMaster>tejas.shah@thehigglers.com (Tejas Shah)</webMaster><copyright>Copyright © 2023 Thehigglers Company. All Rights Reserved.</copyright>",
     items: publishedPost.map((post) => ({
       link: post.url,
       title: post.frontmatter.title,
       description: post.frontmatter.description,
       pubDate: post.frontmatter.pubDate,
-      content: sanitizeHtml(post.compiledContent())
+      customData: "<author>tejas.shah@thehigglers.com (Tejas Shah)</author>"
     })),
   })
 };

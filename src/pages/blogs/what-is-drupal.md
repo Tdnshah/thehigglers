@@ -16,7 +16,7 @@ slug: {}
 author: ""
 image_link: /assets/blog/images/e5ab60ec-6f9f-4714-893a-da9c0e80a572-img-1.png
 status: published
-lastmod: 2023-04-12T21:17:07.114Z
+lastmod: 2023-04-12T21:24:22.403Z
 ---
 
 <Image src="/assets/blog/images/e5ab60ec-6f9f-4714-893a-da9c0e80a572-img-1.png" aspectRatio="0.5" alt="Drupal_custom_token">
@@ -59,5 +59,5 @@ Views also gives you an option to create exposed filters and even contextual fil
 I must say with views sky is the limit to query data and create displays.
 
 Conclusion:
-Hene, this feature of content archtecting  helps in creating a wide variety of application using Drupal hence not restricting its usage only to creating a personal blogging website indeed you can create a wide variety of software application using Drupal outof the box and hence it is mostly also termed as Content Management Framework. Drupal in its core is designed and architured in such a way that it can perfect be called as a low code platform which recently is a kind of BUZZ word in the industry.
+Hence, this feature of content archtecting  helps in creating a wide variety of application using Drupal hence not restricting its usage only to creating a personal blogging website indeed you can create a wide variety of software application using Drupal outof the box and hence it is mostly also termed as Content Management Framework. Drupal in its core is designed and architured in such a way that it can perfect be called as a low code platform which recently is a kind of BUZZ word in the industry.
 
