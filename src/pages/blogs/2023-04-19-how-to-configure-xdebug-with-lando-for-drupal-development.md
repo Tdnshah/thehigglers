@@ -1,12 +1,13 @@
 ---
 uuid: b5cd1820-7fd5-4339-a11a-fed959c39e56
 layout: ../../layouts/SingleBlog.astro
-title: How to configure xdebug with Lando for Drupal Development
+title: How to configure xdebug with Lando & VS code for Drupal Development
 tags:
   - development
   - drupal
   - lando
   - xdebug
+  - drupal-planet
 pubDate: 2023-04-20T12:04:42.000Z
 type: blog
 description: xdebug not working in vscode
@@ -16,9 +17,9 @@ video: ""
 slides: []
 slug: {}
 author: tdnshah
-image_link: public/assets/blog/images/b5cd1820-7fd5-4339-a11a-fed959c39e56-img-1.png
+image_link: /assets/blog/images/b5cd1820-7fd5-4339-a11a-fed959c39e56-img-1.png
 status: published
-lastmod: 2023-04-22T14:47:35.860Z
+lastmod: 2023-04-22T16:26:48.733Z
 ---
 
 <Image src="/assets/blog/images/b5cd1820-7fd5-4339-a11a-fed959c39e56-img-1.png" aspectRatio="0.5" alt="xdebug-lando-vscode-drupal">
