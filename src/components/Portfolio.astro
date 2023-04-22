@@ -9,28 +9,28 @@ const  services = [
         "clientLogo" : "",
         "serviceDescription" : "Our development service include all range of development from a static website to a completely dynamic datadriven web applications.",
         "clientImage" : "../../assets/portfolio/creavids.png",
-        "clientSiteLink" : "/services/webdevelopment"
+        "clientSiteLink" : "https://creavids.co"
     },
     {
         "clientName" : "Prayog An Indian Institute of Technology, Bombay Project",
         "clientLogo" : "",
         "serviceDescription" : "Designing is the core part of any brand which creates the identity of the brand and we help you in developing this identity by our website designing service.",
         "clientImage" : "../../assets/portfolio/prayog_iitb.png",
-        "clientSiteLink" : "/services/webdesign"
+        "clientSiteLink" : "https://www.prayog.ctara.iitb.ac.in"
     }, 
     {
         "clientName" : "Rahul Vitekar",
         "clientLogo" : "../../public/assets/portfolio/rahulvitekar.png",
         "serviceDescription" : "We help business understand & develop data driven dashboard for their business which helps them get insight and take data driven decision.",
         "clientImage" : "../../assets/portfolio/rahulvitekar.png",
-        "clientSiteLink" : "/services/dataanalytics"
+        "clientSiteLink" : "https://rahulvitekar.in"
     },  
     {
         "clientName" : "Mash Global",
         "clientLogo" : "../../assets/portfolio/mashglobal.png",
         "serviceDescription" : "We help business understand & develop data driven dashboard for their business which helps them get insight and take data driven decision.",
         "clientImage" : "../../assets/portfolio/mashglobal.png",
-        "clientSiteLink" : "/services/dataanalytics"
+        "clientSiteLink" : "https://mashglobal.org"
     },
 
     
@@ -58,9 +58,11 @@ if(currentPage == '/') {
                 class="rounded-lg shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30"
                 alt={service.clientName + "-logo"} />
                 <div class="absolute rounded-lg bottom-0 left-0 right-0 px-4 py-2 bg-pink-500 hidden group-hover:block">
-                    <h3 class="text-xl text-white font-bold">
-                        {service.clientName }</h3>
-                    <p class="text-sm text-white">{service.serviceDescription}</p>
+                    <a href={service.clientSiteLink} target="_blank">
+                        <h3 class="text-xl text-white font-bold">
+                            {service.clientName }</h3>
+                        <p class="text-sm text-white">{service.serviceDescription}</p>
+                    </a>
                 </div>
             </div>
             
