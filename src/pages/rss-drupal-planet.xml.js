@@ -15,7 +15,7 @@ export async function get(context) {
       link: post.url,
       title: post.frontmatter.title,
       description: post.frontmatter.description,
-      pubDate: post.frontmatter.pubDate,
+      pubDate: post.frontmatter.lastmod,
       customData: "<author>tejas.shah@thehigglers.com (Tejas Shah)</author>"
     })),
   })

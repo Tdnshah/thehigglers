@@ -8,9 +8,9 @@ tags:
   - lando
   - xdebug
   - drupal-planet
-pubDate: 2023-04-20T12:04:42.000Z
+pubDate: 2023-04-22T21:18:11.198Z
 type: blog
-description: xdebug not working in vscode
+description: Developers usually struggle configuring xdebug with lando vscode for Drupal development, this article would help devlopers searching for xdebug not working with vscode and lando as it step by step explain how you can configure lando and xdebug to work.
 link: ""
 embed: ""
 video: ""
@@ -19,7 +19,7 @@ slug: {}
 author: tdnshah
 image_link: /assets/blog/images/b5cd1820-7fd5-4339-a11a-fed959c39e56-img-1.png
 status: published
-lastmod: 2023-04-22T16:26:48.733Z
+lastmod: 2023-04-22T21:18:12.743Z
 ---
 
 <Image src="/assets/blog/images/b5cd1820-7fd5-4339-a11a-fed959c39e56-img-1.png" aspectRatio="0.5" alt="xdebug-lando-vscode-drupal">
