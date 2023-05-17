@@ -16,7 +16,7 @@ tags:
 author: tdnshah
 image_link: /assets/blog/images/3d29bde7-2418-4a97-b300-ad893c389019-img-1.png
 status: published
-lastmod: 2023-04-03T21:15:51.786Z
+lastmod: 2023-05-17T17:37:38.381Z
 ---
 
 Recently I was looking for better was to manage the markdown files of for my static blog website and I didnt want to leave behind editor interface just to write a new blog article as I am too lazy to switch between multiple interfaces. Hence while I was searching on the google if any such simple products exsist which looks a CMS. 
@@ -49,5 +49,5 @@ Yes, Frontmatter CMS provides a nice interface with select list type of fields a
 
 I am still exploring new features and how it can be used as a CMS in IDE and will keep updateing thos post so that others can also leverage this awesome in IDE CMS for static sites.
 
-You can find more about [Frontmatter CMS]("https://frontmatter.codes/") on there official [Website]("https://frontmatter.codes/")
+You can find more about [Frontmatter CMS](https://frontmatter.codes/) on there official [Website](https://frontmatter.codes/)
    

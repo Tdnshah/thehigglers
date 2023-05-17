@@ -19,7 +19,7 @@ slug: {}
 author: tdnshah
 image_link: /assets/blog/images/b5cd1820-7fd5-4339-a11a-fed959c39e56-img-1.png
 status: published
-lastmod: 2023-04-22T21:18:12.743Z
+lastmod: 2023-05-17T17:36:05.342Z
 ---
 
 <Image src="/assets/blog/images/b5cd1820-7fd5-4339-a11a-fed959c39e56-img-1.png" aspectRatio="0.5" alt="xdebug-lando-vscode-drupal">
@@ -129,5 +129,5 @@ All the above configurations should get you up and running with xdebug enjoy deb
 
 The above article was written reffering the below resources and we woulld like to give a special thanks all mentioned below.
 
-1. [Matthieu Scarset for providing the gist.](!https://gist.github.com/MatthieuScarset/0c3860def9ff1f0b84e32f618c740655) 
-2. [Valdi Iancu for putting an great article.](!https://vladiiancu.com/post/configure-xdebug-3-and-vscode-with-docker/)
+1. [Matthieu Scarset for providing the gist.](https://gist.github.com/MatthieuScarset/0c3860def9ff1f0b84e32f618c740655) 
+2. [Valdi Iancu for putting an great article.](https://vladiiancu.com/post/configure-xdebug-3-and-vscode-with-docker/)
