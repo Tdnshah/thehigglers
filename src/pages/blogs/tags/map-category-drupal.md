@@ -1,4 +1,3 @@
 ---
-Category: drupal
 category: drupal
 ---

@@ -32,5 +32,12 @@ export default defineConfig({
     }
   }), sitemap(), mdx(), alpinejs(), compress(), prefetch(), image({
     logLevel: 'debug'
-  })]
+  })],
+  vite: {
+    build: {
+      rollupOptions: {
+        external: "config.yml",
+      },
+    },
+  },
 });

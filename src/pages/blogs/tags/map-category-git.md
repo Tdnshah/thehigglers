@@ -1,4 +1,3 @@
 ---
-Category: git
 category: git
 ---

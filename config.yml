@@ -2,7 +2,6 @@ backend:
   name: github
   repo: Tdnshah/thehigglers
   branch: main
-publish_mode: editorial_workflow
 media_folder: "/public"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
@@ -11,26 +10,20 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "uuid", name: "uuid", widget: "hidden", default: {{}}}
+      - {label: "type", name: "type", widget: "hidden", default: 'blog'}
       - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/SingleBlog.astro"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "pubDate", widget: "datetime"}
       - {label: "Updated Date", name: "lastmod", widget: "datetime"}
       - {label: "Featured Image", name: "image_link", widget: "image"}
       - {label: "Status", name: "status", widget: "select", options: ["draft", "review", "published"]}
-      - {label: 'Add Blog Tags', name: 'tags', widget: 'list', field: {label: Tags, name: tags, widget: 'relation', collection: settings, searchFields: ['tagsList'], valueField: 'tagsList'}}
+      - {label: 'Add Blog Tags', name: 'tags', widget: 'list', field: {label: Tags, name: tagsList, widget: 'relation', collection: categories, searchFields: ["category"],search_fields: ["category"]  , valueField: "category",value_Field: "category"}}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Settings"
-    label: "settings"
-    files:
-      - file: 'src/pages/blogs/tags/tags.yml'
-        label: 'Tag Collection'
-        name: 'tagCollection'
-        create: true
-        fields: 
-          - {label: 'List of tags', name: tagsList, widget: list, field: {
-            label: Tag,
-            name: 'tagTitle',
-            widget: string,}}
+  - name: "categories"
+    label: "Categories"
+    folder: "src/pages/blogs/tags/" # The path to the folder where the documents are stored
+    create: true
+    fields: 
+      - {label: 'Category', name: category, widget: string}
 
