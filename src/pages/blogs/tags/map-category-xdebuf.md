@@ -1,3 +1,4 @@
 ---
 Category: xdebuf
+category: xdebug
 ---
