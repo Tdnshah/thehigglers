@@ -1,3 +1,4 @@
 ---
 Category: events
+category: events
 ---
