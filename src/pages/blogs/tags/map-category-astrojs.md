@@ -1,3 +1,4 @@
 ---
 Category: astrojs
+category: astrojs
 ---
