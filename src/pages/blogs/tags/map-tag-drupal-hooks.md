@@ -1,3 +1,0 @@
----
-tag: Drupal Hooks
----
