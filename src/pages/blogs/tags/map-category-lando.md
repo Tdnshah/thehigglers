@@ -1,3 +1,4 @@
 ---
 Category: lando
+category: lando
 ---
