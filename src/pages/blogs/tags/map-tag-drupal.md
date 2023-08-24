@@ -1,4 +1,0 @@
----
-tag: Drupal
-Category: drupal
----
