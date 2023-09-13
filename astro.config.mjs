@@ -35,6 +35,7 @@ export default defineConfig({
   })],
   vite: {
     build: {
+      exclude: "config.yml",
       rollupOptions: {
         external: "config.yml",
       },
