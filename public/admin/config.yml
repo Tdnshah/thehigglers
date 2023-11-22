@@ -1,10 +1,11 @@
+localbackend: true
 backend:
-  name: github
-  branch: main # change this to your branch
-  repo: Tdnshah/thehigglers # change this to your repo
-  site_domain: thehigglers.com # change this to your domain
-  base_url: https://thehigglers.com # change this to your prod URL
-  auth_endpoint: oauth # the oauth route provided by the integration
+  name: git-gateway
+  # branch: main # change this to your branch
+  # repo: Tdnshah/thehigglers # change this to your repo
+  # site_domain: thehigglers.com # change this to your domain
+  # base_url: https://thehigglers.com # change this to your prod URL
+  # auth_endpoint: oauth # the oauth route provided by the integration
 media_folder: "/public"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog

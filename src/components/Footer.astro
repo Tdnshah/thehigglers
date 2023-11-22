@@ -51,7 +51,7 @@ let url = Astro.url;
   </div>
 </div> -->
 <div class="p-10 bg-thc-blue-400">
-  <div class="max-w-screen-xl mx-auto flex flex-wrap justify-between">
+  <div class="md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto flex flex-wrap justify-between">
     <h2 class="text-white m-0 text-center lg:text-left"> How We Can Help You With Your Next Project?</h2>
     <div class="my-auto mx-auto lg:mx-0">
       <a href="/consultancy-booking/" class="inline-flex items-center px-10 py-3 text-sm  font-medium text-center bg-white text-thc-blue-300 rounded-lg hover:bg-thc-blue-200  hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -65,7 +65,7 @@ let url = Astro.url;
   </div>
 </div>
 
-<footer class="lg:px-0 md:px-6 md:py-8 dark:bg-white-900 max-w-screen-xl mx-auto">
+<footer class="lg:px-0 md:px-6 md:py-8 dark:bg-white-900 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
 
   <div class="flex flex-wrap items-center justify-center lg:justify-between mx-auto py-5 lg:py-0">
       <Logo></Logo>
@@ -89,6 +89,11 @@ let url = Astro.url;
   <hr class="my-2 border-white-200 mx-auto dark:border-white-700 lg:my-2 border-thc-blue-300" />
   <span class="block text-sm text-white-500 text-center dark:text-white-400 text-thc-blue-300"><a href="/" class="hover:underline">Copyright © {year} Thehigglers Company. </a> All Rights Reserved.
   </span>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+          new PagefindUI({ element: "#search", showSubResults: true });
+      });
+  </script>
 </footer>
 
 
