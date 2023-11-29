@@ -22,7 +22,7 @@ export default config({
     posts: {
       label: 'Blogs',
       slugField: 'title',
-      path: 'pages/blogs/*',
+      path: './src/pages/blogs/*',
       format: { contentField: 'content' },
       entryLayout: "content",
       schema: {
