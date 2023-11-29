@@ -4,15 +4,18 @@ import LandingPage from "../components/LandingPage.astro";
 import Main from "../layouts/Main.astro";
 import { Image, Picture } from '@astrojs/image/components';
 const imageUrl = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
+// 👀 note the prerender export
+export const prerender = true;
+
 ---
 <Main title="About">
     <!-- Container for demo purpose -->
-<div class="max-w-screen-xl mx-auto">
+<div class="md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
 
     <!-- Section: Design Block -->
     <section class="mb-10 text-gray-800 text-center md:text-left">
-      <div class="my-20">
-        <h1 class="text-white mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"><span class="before:block before:absolute before:-inset-3 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+      <div class="my-10 xl:my-20">
+        <h1 class="sub-page-header-highlight"><span class="before:block before:absolute before:-inset-3 before:-skew-y-3 before:bg-pink-500 relative inline-block">
             <span class="relative text-white">About Us</span>
             </span>
         </h1>

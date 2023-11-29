@@ -1,43 +1,29 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
-
 import sitemap from "@astrojs/sitemap";
-
-// https://astro.build/config
 import mdx from "@astrojs/mdx";
-
-// https://astro.build/config
 import alpinejs from "@astrojs/alpinejs";
-
-// https://astro.build/config
 import compress from "astro-compress";
-
-// https://astro.build/config
 import prefetch from "@astrojs/prefetch";
+import react from '@astrojs/react';
+import keystatic from '@keystatic/astro';
+import markdoc from "@astrojs/markdoc";
 
-// https://astro.build/config
-import image from "@astrojs/image";
-
-// https://astro.build/config
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://thehigglers.com/',
   base: '/',
   integrations: [tailwind({
-    // Example: Disable injecting a basic `base.css` import on every page.
-    // Useful if you need to define and/or import your own custom `base.css`.
     config: {
       applyBaseStyles: false
     }
-  }), sitemap(), mdx(), alpinejs(), compress(), prefetch(), image({
-    logLevel: 'debug'
+  }), sitemap(), mdx(), alpinejs(), compress(), prefetch(), react(), markdoc(), keystatic(),sitemap({
+    filter: (page) => !page.includes("keystatic"),
   })],
-  vite: {
-    build: {
-      rollupOptions: {
-        external: "config.yml",
-      },
-    },
-  },
+  output: "hybrid",
+  adapter: node({
+    mode: "standalone"
+  })
 });

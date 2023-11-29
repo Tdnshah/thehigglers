@@ -6,6 +6,11 @@ export async function get(context) {
   const posts = Object.values(postImportResult);
   let publishedPost = posts.filter(el => el.frontmatter.status === 'published');
   publishedPost = publishedPost.filter(el => el.frontmatter.tags.includes('drupal-planet'))
+  publishedPost = publishedPost.sort(function(a,b){
+    // Turn your strings into dates, and then subtract them
+    // to get a value that is either negative, positive, or zero.
+    return new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate);
+  });
   return rss ({
     title: 'Thehigglers Company Blogs Rss Feeds for Drupal Planet.',
     description: 'Thehigglers Company is a web agency helping enterprises build there online presence.',
@@ -16,7 +21,9 @@ export async function get(context) {
       title: post.frontmatter.title,
       description: post.frontmatter.description,
       pubDate: post.frontmatter.lastmod,
-      customData: "<author>tejas.shah@thehigglers.com (Tejas Shah)</author>"
+      customData: "<author>tejas.shah@thehigglers.com (Tejas Shah)</author>",
+      customData: `<language>en-us</language>`,
+      customData: `<image><url>${context.site.origin}${post.frontmatter.image_link}</url></image>`
     })),
   })
 };

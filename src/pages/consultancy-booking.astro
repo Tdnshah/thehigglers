@@ -1,0 +1,84 @@
+---
+import LandingPage from "../components/LandingPage.astro";
+import SocialIcon from "../components/SocialIcon.astro";
+import Main from "../layouts/Main.astro";
+// 👀 note the prerender export
+export const prerender = true;
+
+---
+<Main title="Consultancy">
+    <div class="md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto my-10">
+        <div class="my-10 xl:my-20">
+            <h1 class="sub-page-header-highlight"><span class="before:block before:absolute before:-inset-3 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+                <span class="relative text-white">Consultancy</span>
+                </span>
+            </h1>
+        </div>
+        <div class="flex flex-wrap">
+            <div class="w-full px-10">
+                <div class="text-center py-10">
+                    <h2>Schedule Your Free Consultancy Now!</h2>
+                    <p>
+                        You can schedule a free consultancy now with solution architect & get a expert suggestion on your project development.
+                    </p>
+                </div>
+               
+                <!-- Cal inline embed code begins -->
+                <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+                <script type="text/javascript">
+                (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                Cal("init", {origin:"https://cal.com"});
+
+                Cal("inline", {
+                    elementOrSelector:"#my-cal-inline",
+                    calLink: "tdnshah/the-higglers-technology-consultation",
+                    layout: "month_view"
+                });
+                
+                Cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+                </script>
+                <!-- Cal inline embed code ends -->
+            </div>
+        </div>
+        
+    </div>
+    
+</Main>
+<script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+    function test(){
+        let visitorEmail = document.getElementById('floating_email').value;
+        let visitorFirstName = document.getElementById('floating_first_name').value;
+        let visitorLastName =  document.getElementById('floating_last_name').value;
+        let visitorPhoneNumber = document.getElementById('floating_phone').value;
+        let vistorCompany = document.getElementById('floating_company').value;
+        let visitorMessage = document.getElementById('floating_message').value;
+        
+        let subject = "Their is an Inquiry on Thehigglers.com from Mr. " + visitorFirstName + " " + visitorLastName +".";
+        
+        let message = "Mr." + visitorFirstName + " " + visitorLastName + " has an inquiry on thehigglers.com. He has left a message as below " + visitorMessage + " He's contact details are Phone Number: " + visitorPhoneNumber + " Email: " + visitorEmail + " Company: " + vistorCompany +". Please contact him as soon as possible.";
+        
+        let emailStatus = sendEmail(subject, message, "contactForm",  "successMessage");
+        
+        event.preventDefault();
+    }
+
+    function sendEmail(subject, message, elementToHideId, elementIdToShow) {
+      Email.send({
+        SecureToken:"1dc2747c-952a-4071-b442-fbedc685bfa5",
+        To: "sankettejas@gmail.com",
+        From: "sankettejas@gmail.com",
+        Subject: subject,
+        Body: message,
+      }).then(function (message) {
+            if(message == 'OK'){
+                document.getElementById(elementToHideId).className = "hidden";
+                document.getElementById(elementIdToShow).className = "border border-pink-500 rounded-lg mx-auto p-10 m-52 block";
+            }
+            else{
+                alert(message);
+            }
+        });
+    }
+</script>
+

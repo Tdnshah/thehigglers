@@ -20,3 +20,6 @@ pnpm-debug.log*
 .frontmatter
 frontmatter.json 
 .vscode
+
+# Custom deployment script
+push.sh

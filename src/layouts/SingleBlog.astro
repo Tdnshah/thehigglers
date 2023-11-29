@@ -10,72 +10,99 @@ let pagedescription = frontmatter.description
 let pageImage = frontmatter.image_link
 let author = frontmatter.author
 let date = new Date(frontmatter.pubDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
-const url = Astro.url
+const url =  new URL(Astro.url.pathname, Astro.site);
 const htmlContent = await Astro.slots.render('default');
 const tags = frontmatter.tags;
 
+// 👀 note the prerender export
+export const prerender = true;
 ---
 <Main title={pagetitle} description={pagedescription} image_link = {pageImage}>
-   <div class="flex flex-wrap w-full">
-        <aside class="my-[800px]  mx-auto hidden lg:block">
-            <div class="w-[160px] bg-blue-400">
-                <a href="/services/webhosting-pricing">
-                    <img src="/assets/thehigglers-ads.gif" alt="thehigglers webhosting ads">
-                </a>
-            </div>  
-        </aside>
-        <article class="max-w-6xl prose prose-sm lg:prose-base prose-headings:text-thc-blue-300 lg:prose-hr:my-0 lg:mx-auto text-justify m-4 my-24">
-            <h1 class="text-center mb-0">{frontmatter.title}</h1>
-            <hr class="lg:py-3">
-            <div class="flex flex-wrap justify-between mx-auto mb-10">
-                <div>
-                    <h6 class="mb-1.5"><strong>Authored By : </strong>{author}</h6>
-                    <SocialIcon fontColor="text-thc-blue-400 hover:text-thc-blue-200" icon_w="5" icon_h="5" url={url}></SocialIcon>
+    <div class="md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+        <div class="flex w-full items-stretch justify-center">
+            <aside class="mx-5  my-auto items-center align-middle">
+                <div class="w-[160px] bg-blue-400">
+                    <div id="yandex_rtb_R-A-3098078-2"></div>
+                </div>  
+            </aside>
+            <article class="prose prose-sm lg:prose-h6:text-sm lg:prose-h1:text-xl lg:prose-base prose-headings:text-thc-blue-300 lg:prose-hr:my-0 lg:mx-auto text-justify lg:my-12 xl:my-24">
+                <h1 class="text-center mb-0">{frontmatter.title}</h1>
+                <hr class="lg:py-3">
+                <div class="flex flex-wrap justify-between mx-auto mb-2 xl:mb-10">
+                    <div>
+                        <h6 class="mb-1.5"><strong>Authored By : </strong>{author}</h6>
+                        <SocialIcon fontColor="text-thc-blue-400 hover:text-thc-blue-200" icon_w="5" icon_h="5" url={url}></SocialIcon>
+                    </div>
+                    <div class="w-full my-3 lg:my-0 lg:w-auto">
+                        <!-- Lyket like dislike functionality -->
+                        <div class="text-lg lg:text-center"
+                        data-lyket-type="clap"
+                        data-lyket-id={frontmatter.uuid}
+                        data-lyket-namespace="blog"
+                        data-lyket-template="medium"
+                        />
+                        <span class="text-center my-0">{getReadingTime(htmlContent)} minutes read</span>
+                    </div>
+                    <div class="w-full my-3 lg:my-0 lg:w-auto">
+                        <h6 class="m-0"><strong>Published On</strong><br>{date}</h6>
+                    </div>
                 </div>
-                <div class="w-full my-3 lg:my-0 lg:w-auto">
-                    <!-- Lyket like dislike functionality -->
-                    <div class="text-lg lg:text-center"
-                    data-lyket-type="clap"
-                    data-lyket-id={frontmatter.uuid}
-                    data-lyket-namespace="blog"
-                    data-lyket-template="medium"
-                    />
-                    <span class="text-center my-0">{getReadingTime(htmlContent)} minutes read</span>
+                <hr class="lg:py-3">
+                <slot/>
+                <hr class="py-10">
+        
+                <div class="mb-10 p-4 border border-pink-500 rounded-lg text-center text-pink-500">
+                   <p class="text-pink-500"> Please give us your feedback on our articles and if you find them helpful, click the thumbs up icon to motivate us to write more.</p>
                 </div>
-                <div class="w-full my-3 lg:my-0 lg:w-auto">
-                    <h6 class="m-0"><strong>Published On</strong><br>{date}</h6>
+        
+                <!-- Cusdis comments sections. -->
+                <div id="cusdis_thread" 
+                    data-host="https://cusdis.com"
+                    data-app-id="a74fa1b8-dc14-449a-841a-73d4c930afd0"
+                    data-page-id={frontmatter.uuid}
+                    data-page-url={url}
+                    data-page-title={pagetitle}
+                >
                 </div>
-            </div>
-            <hr class="lg:py-3">
-            <slot/>
-            <hr class="py-10">
+                <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+            </article>
     
-            <div class="mb-10 p-4 border border-pink-500 rounded-lg text-center text-pink-500">
-               <p class="text-pink-500"> Please give us your feedback on our articles and if you find them helpful, click the thumbs up icon to motivate us to write more.</p>
-            </div>
-    
-            <!-- Cusdis comments sections. -->
-            <div id="cusdis_thread" 
-                data-host="https://cusdis.com"
-                data-app-id="a74fa1b8-dc14-449a-841a-73d4c930afd0"
-                data-page-id={frontmatter.uuid}
-                data-page-url={url}
-                data-page-title={pagetitle}
-            >
-            </div>
-            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-        </article>
-
-        <aside class="my-[800px] mx-auto hidden lg:block">
-            <div class="w-[160px] bg-blue-400">
-                <a href="/services/webhosting-pricing">
-                    <img src="/assets/thehigglers-ads.gif" alt="thehigglers webhosting ads">
-                </a>
-            </div>  
-        </aside>
-   </div>
+            <aside class="mx-5 my-auto">
+                <div class="w-[160px] bg-blue-400">
+                    <div id="yandex_rtb_R-A-3098078-1">
+                    </div>
+                </div>  
+            </aside>
+       </div>
+        <!-- Yandex Native Ads C-A-3098078-3 -->
+        <div id="yandex_rtb_C-A-3098078-3"></div>
+        </div>
+    </div>
+   
 
 
 </Main>
 
 <script is:inline src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_e7ccbb5fd86c5f1970a028d24ac6c5"></script>
+<script is-inline>
+    window.yaContextCb.push(()=>{
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-3098078-1",
+            "renderTo": "yandex_rtb_R-A-3098078-1"
+        })
+    })
+</script>
+<script is:inline>
+    window.yaContextCb.push(()=>{
+        Ya.Context.AdvManager.render({
+            "blockId": "R-A-3098078-2",
+            "renderTo": "yandex_rtb_R-A-3098078-2"
+        })
+    })
+</script>
+<script is:inline>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.renderWidget({
+    renderTo: 'yandex_rtb_C-A-3098078-3',
+    blockId: 'C-A-3098078-3'
+  })
+})</script>

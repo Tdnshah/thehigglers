@@ -1,13 +1,10 @@
 ---
-import {Image} from "@astrojs/image/components";
-
 import logo from '../../public/assets/branding/thehigglers-logo.svg'
-
-
+console.log(logo)
 ---
 <a href="https://thehigglers.com/" class="">
     <div class="flex items-center">
-        <Image src={logo} class="w-64 lg:w-96 mr-3" alt="thehigglers-company-logo" width=400  aspectRatio={9/16}/>
+        <img src={logo.src} class="w-44 lg:w-64 xl:w-96 mr-3" alt="thehigglers-company-logo" width=400  aspectRatio={9/16}/>
         <!-- <span class="self-center text-2xl lg:text-3xl font-normal whitespace-nowrap dark:text-white text-thc-blue-400">thehigglers company</span> -->
     </div>
 </a>

@@ -1,11 +1,14 @@
 ---
 import Main from "../layouts/Main.astro"; 
+// 👀 note the prerender export
+export const prerender = true;
+
 ---
 
 <Main title="Terms Of Use">
-    <div class="max-w-screen-xl mx-auto my-10">
-        <div class="my-20">
-            <h1 class="text-white mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl"><span class="before:block before:absolute before:-inset-3 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+    <div class="md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto my-10">
+        <div class="my-10 xl:my-20">
+            <h1 class="sub-page-header-highlight"><span class="before:block before:absolute before:-inset-3 before:-skew-y-3 before:bg-pink-500 relative inline-block">
                 <span class="relative text-white"> Terms Of Use</span>
                 </span>
             </h1>

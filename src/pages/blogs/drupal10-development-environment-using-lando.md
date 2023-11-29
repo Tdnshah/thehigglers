@@ -188,6 +188,6 @@ Database User Name: Drupal10
 
 Database User Password: Drupal10
 
-Database host : datatable
+Database host : database
 
 
